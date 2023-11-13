@@ -1,0 +1,745 @@
+/* Réinitialisation des styles par défaut */
+html, body, div, h1, h2, p, a, img {
+    font-family: Arial, sans-serif;
+}
+
+/* Styles généraux */
+
+html {
+    background-color: #f0f0f0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+#photoIntro{
+    width: 252px;
+    height: 560px;
+    border-radius: 20px;
+    border: none;
+}
+
+body {
+    color: #333333;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.6;
+    border: none;
+}
+
+/* Header */
+header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu-item:hover .sousmenu {
+    display: block;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sousmenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333333;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.sousmenu a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    transition: height 1s;
+}
+
+.but:hover .sousmenu2{
+    display: block;
+}
+
+.sousmenu2{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 160px;
+    background-color: #333333;
+    min-width: 200px;
+    z-index: 1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* contenue du main general*/
+main {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #666666;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+/* Styles pour l'acceuil */
+.presentation p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 10px;
+}
+
+.presentation div{
+    margin: 20px;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+}
+
+.texteBiographie{
+    color: #f0f0f0;
+    padding: 10px;
+}
+
+.boiteDepliante{
+    display: block;
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.boiteDepliante summary{
+    color: #f0f0f0;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.competenceGeneral{
+    display: flex;
+}
+
+.competence {
+    flex-direction: row;
+    background-color: #32CD32;
+    /*transition: width 1s ease-in-out;*/
+    width: 10px;
+}
+
+.texteComp{
+    width: 110px;
+}
+
+.texteComp p{
+    color: #f0f0f0;
+    margin: 0;
+}
+
+/*competence*/
+details[open] #java{
+    width: 700px;
+}
+
+details[open] #FX{
+    width: 400px;
+}
+
+details[open] #css{
+    width: 500px;
+}
+
+details[open] #php{
+    width: 250px;
+}
+
+details[open] #sql{
+    width: 400px;
+}
+
+details[open] #c{
+    width: 550px;
+}
+
+details[open] #arduino{
+    width: 150px;
+}
+
+details[open] #virtualBox{
+    width: 150px;
+}
+
+/*!*carroussel*!*/
+
+#diaporama-container {
+    display: flex;
+    justify-content: center;
+}
+
+.diaporama{
+    display:flex;
+    align-items: center;
+    width:400px;
+    overflow:hidden;
+    margin:0 auto;
+    padding:0;
+}
+
+.diaporama li{
+    position:relative;
+    max-height:100%;
+}
+
+.diaporama img{
+    display:block;
+    width:400px;
+    border:none;
+    animation: slide 8s infinite;
+}
+
+.bloc{
+    display: block;
+    width: 610px;
+    border: 6px solid #FFF;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px #888;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: center;
+ }
+
+@keyframes slide {
+    50%{
+        transform: translate(-400px, 0);
+    }
+    100% {
+        transform: translate(0px, 0);
+    }
+}
+
+/*general css*/
+.separator {
+    border-top: 3px solid #ccc;
+    margin: 20px 0;
+}
+
+.descriptionImg {
+    color: #888;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Images */
+.imgPresent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img {
+    margin: 10px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.THM{
+    width: 561px;
+    height: 397px;
+}
+
+.logo{
+    width: 250px;
+    height: 250px;
+}
+
+a >.logo {
+    border-radius: 100%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+p > em {
+    font-weight: bold;
+}
+
+#nav2 {
+    display: none;
+}
+
+.menu-item:hover > a {
+    background-color: #555;
+    color: #fff;
+}
+
+.menu-item > a {
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.lienFooter{
+    text-decoration: none;
+}
+
+/* Projet personnel */
+#lienFleo{
+    text-align: center;
+}
+
+#lienFleo > a{
+    font-size: 30px;
+}
+
+/* Formulaire */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+legend {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.texteForm {
+    margin: 10px 0;
+}
+
+.labelForm {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Styles pour le pied de page */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+#signature {
+    font-size: 16px;
+}
+
+/* Styles pour les projet de semestre */
+
+.imgProjet{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    border: none;
+}
+
+.SAEGlobal{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.SAEGlobal > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 16.6%;
+    background-color: #333333;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.SAEGlobal > div p{
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.SAEGlobal li{
+    color: #f0f0f0;
+    text-align: center;
+    list-style: none;
+}
+
+.texteS{
+    text-align: center;
+}
+
+/*------------------------*/
+
+#texteSAE101{
+    display: none;
+}
+
+#SAE101:active #texteSAE101{
+    display: block;
+}
+
+#SAE101:active{
+    display: block;
+    width: 100%;
+}
+
+/*------------------------*/
+#texteSAE102{
+    display: none;
+}
+
+#SAE102:active #texteSAE102{
+    display: block;
+}
+
+#SAE102:active{
+    width: 100%;
+}
+
+/*------------------------*/
+
+#texteSAE103{
+    display: none;
+}
+
+#SAE103:active #texteSAE103{
+    display: block;
+}
+
+#SAE103:active{
+    width: 100%;
+}
+
+/*------------------------*/
+
+#texteSAE104{
+    display: none;
+}
+
+#SAE104:active #texteSAE104{
+    display: block;
+}
+
+#SAE104:active{
+    width: 100%;
+}
+
+/*------------------------*/
+
+#texteSAE105{
+    display: none;
+}
+
+#SAE105:active #texteSAE105{
+    display: block;
+}
+
+#SAE105:active{
+    width: 100%;
+}
+
+/*------------------------*/
+
+#texteSAE106{
+    display: none;
+}
+
+#SAE106:active #texteSAE106{
+    display: block;
+}
+
+#SAE106:active{
+    width: 100%;
+}
+
+/*------------------------*/
+
+#texteSAE201{
+    display: none;
+}
+
+#SAE201:active #texteSAE201{
+    display: block;
+}
+
+#SAE201:active{
+    width: 100%;
+}
+
+/*------------------------*/
+
+#texteSAE202{
+    display: none;
+}
+
+#SAE202:active #texteSAE202{
+    display: block;
+}
+
+#SAE202:active{
+    width: 100%;
+}
+
+/*------------------------*/
+
+#texteSAE203{
+    display: none;
+}
+
+#SAE203:active #texteSAE203{
+    display: block;
+}
+
+#SAE203:active{
+    width: 100%;
+}
+
+/*------------------------*/
+
+#texteSAE204{
+    display: none;
+}
+
+#SAE204:active #texteSAE204{
+    display: block;
+}
+
+#SAE204:active{
+    width: 100%;
+}
+
+/*------------------------*/
+
+#texteSAE205{
+    display: none;
+}
+
+#SAE205:active #texteSAE205{
+    display: block;
+}
+
+#SAE205:active{
+    width: 100%;
+}
+
+/*------------------------*/
+
+#texteSAE206{
+    display: none;
+}
+
+#SAE206:active #texteSAE206{
+    display: block;
+}
+
+#SAE206:active{
+    width: 100%;
+}
+
+/*page de contact*/
+
+.contact-info {
+    text-align: left;
+}
+
+@media screen and (min-width: 1577px){
+    .SAEGlobal:active > div:not(:hover) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1577px) {
+    .SAEGlobal{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .SAEGlobal > div{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /*-----------------------*/
+
+    #SAE101:hover ~ div{
+        display: flex;
+    }
+
+    /*-----------------------*/
+
+    #SAE102:hover ~ div{
+        display: flex;
+    }
+
+    /*-----------------------*/
+
+    #SAE103:hover ~ div{
+        display: flex;
+    }
+
+    /*-----------------------*/
+
+    #SAE104:hover ~ div{
+        display: flex;
+    }
+
+    /*-----------------------*/
+
+    #SAE105:hover ~ div{
+        display: flex;
+    }
+
+    /*-----------------------*/
+
+    #SAE106:hover ~ div{
+        display: flex;
+    }
+
+    /*-----------------------*/
+
+    #SAE105:hover ~ div{
+        display: flex;
+    }
+
+    /*-----------------------*/
+
+    #SAE105:hover ~ div{
+        display: flex;
+    }
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    header {
+        background: #f0f0f0;
+    }
+
+    #nav2 {
+        display: block;
+        position: relative;
+        width: auto;
+        padding: 20px;
+    }
+
+    #nav2 .nav {
+        display: none;
+        position: absolute;
+        background-color: #333333;
+    }
+
+    #nav2 .burger-icon {
+        border: none;
+        width: 32px;
+        height: 32px;
+    }
+
+    #nav2:hover .nav{
+        display: block;
+    }
+
+    #nav-primaire {
+        display: none;
+    }
+
+    .menu-item {
+        margin-bottom: 10px;
+    }
+
+    .sousmenu{
+        left: 120px;
+        top: 0;
+    }
+
+    #carousel{
+        display: block;
+    }
+
+    .textePres{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}

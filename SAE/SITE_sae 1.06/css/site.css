@@ -1,0 +1,886 @@
+/*-------------------------DEBUT----------------*/
+html{
+    scroll-behavior: smooth;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color:mistyrose;
+    scrollbar-width: auto; /* "auto" or "thin" */
+    overflow: scroll;
+}
+
+.bouton{
+    height:50px;
+    width: 50px;
+    background-color: azure;
+    display: flex;
+    border-radius: 50%;
+    justify-content:center;
+    align-items: center;
+    position: fixed;
+    left:20px;
+    bottom:20px;
+    cursor:pointer;
+}
+.svg{
+   width: 25px; 
+}
+/*----------------------------HEADER, NAV----------------------*/
+header{
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo{
+    width: 80px;
+    height: 50px;
+}
+#logo_fixe { 
+    position : fixed;
+    left : 3px;
+    top : 10px; 
+}
+.un{
+    background-color:darksalmon; 
+}
+ 
+nav{
+    position: relative;
+    display: flex;
+    left:60px;
+    margin:0 auto;
+}
+nav>ul{
+    position: relative;
+    justify-content: flex-end;
+
+}
+
+ul{
+    display: flex; 
+}
+#submenu{
+    background-color: darksalmon;
+    text-align: left;
+    position: relative;
+    left:35px;
+    border-radius: 5%;
+    box-sizing: border-box;
+}
+.dvpm{
+    white-space: nowrap;
+}
+ul .mo{
+    width: 200px;
+}
+li{
+    display: block;
+}
+nav #submenu li>a{
+    text-decoration: none;
+}
+.titre{
+    text-align: center;
+    overflow:hidden;
+    width: 600px;
+}
+a{
+    display: block;
+}
+.submenu{
+    position :absolute;
+    display: none;
+    padding-top: 10px;
+    left: -20px;
+    top:10%;
+
+    
+}
+.submenu_b{
+    padding: 10px 20px;
+}
+nav .submenu_b a:hover {
+    text-decoration: underline;
+  }
+
+.mo{
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 10px;
+}
+.mo:hover .submenu {
+	display: block;
+}
+img{
+    position:relative;
+    height:300px;
+    width:600px;
+    border-radius: 5%;
+}
+/*------------------------BURGER-----------------*/
+.burger {
+    background-color: #33494b;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    left:0;
+  }
+  
+  .burger:hover  #menu_burger {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    top: 10%;
+    width: 80%;
+    text-align: center;
+    font-size:large;
+  }
+
+  #menu_burger > div {
+    background-color: #33494b;
+    align-items: stretch;
+    width: 100%;
+  }
+  
+  #menu_burger > div {
+    border-top: 1px #FFF solid;
+  }
+  
+  .image{
+    height: 40px;
+    width: 40px;
+  }
+  #menu_deroulant:hover > #sous_menu{
+    display: flex;
+    flex-direction: column;
+    position: static;
+    height: 50%;
+    width: 80%;
+  }
+  .burger{
+    display: none;
+}
+#sous_menu a{
+    text-decoration: none;
+    color:aliceblue;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.ac{
+    color:aliceblue;
+    font-weight: bold;
+}
+/*---------------------------DIV-----------------*/
+.bloc{
+position: relative;
+display: block;
+width: 610px;
+border: 6px solid #FFF;
+overflow: hidden;
+box-shadow: 1px 1px 20px #888;
+border-radius: 5%;
+box-sizing: border-box;
+margin: 0 auto;
+top:40px;
+
+}
+div.menu a{
+    color: black;
+}
+.diaporama{
+    animation: slide 10s ease infinite 0s;
+    display:flex;
+    width:400%;
+    margin:0;
+    padding:0;
+}
+.diaporama li{
+    position:relative;
+    max-height:100%;
+}
+
+.diaporama img{
+    display:block;
+    width:600px;
+}
+@keyframes slide {
+    0%, 14.81%, 100% {
+      transform: translate(0,0);
+    }
+    25.93%, 40.74% {
+      transform: translate(-25%,0);
+    }
+    51.85%, 66.67% {
+      transform: translate(-50%,0);
+    }
+    77.78%, 92.59% {
+        transform: translate(-75%,0);
+      }
+
+}
+/*-----------------------------MAIN----------------------- */
+main.contenu p{
+    font-size: 18px;
+}
+main.contenu{
+    margin:auto;
+    text-align:center;
+    display: block;
+    width: 100%;
+}
+main.contenu h2{
+    font-size: 24px;
+    text-align: left;
+    text-decoration: underline;
+}
+main.contenu h3{
+    font-size: 18px;
+    color:darkred;
+}
+
+.box{
+    margin:50px;
+    display: flex;
+    padding-top:7%;
+    }
+.republique{
+    margin:50px;
+    padding:40px;
+    display: flex;
+    position: relative;
+    left:-16%;
+    }
+.olivier{
+    margin:50px;
+    display: flex;
+    position: relative;
+    left: -15%;
+}
+.content{
+    margin:50px;
+    padding:40px;
+    display: flex;
+    position: relative;
+    top:-40px;
+    left:-5%;
+    }
+.edu{
+    white-space: nowrap;
+}
+.dive{
+    margin:0 auto;
+    max-width: 100%;
+    padding:40px;
+    position: relative;
+    left:15%;
+}
+.div{
+    position: relative;
+    width: 610px;
+    max-width: 100%;
+    margin: 0 auto;
+    left:30px;
+    }
+.intro{
+    position: relative;
+    height:300px;
+    width: 600px;
+    border: 6px solid #FFF;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px #888;
+    border-radius: 5%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    
+    }
+.houde{
+    position: relative;
+    height:300px;
+    border: 6px solid #FFF;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px rgb(0, 0, 0);
+    border-radius: 5%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    left:15%
+        
+}
+.nationale{
+    position: relative;
+    width: 600px;
+    border: 6px solid rgb(246, 234, 234);
+    overflow: hidden;
+    box-shadow: 1px 1px 20px #888;
+    border-radius: 5%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 200px;
+    left:7%;
+}
+.scientifique{
+    position: relative;
+    border: 6px solid rgb(246, 234, 234);
+    overflow: hidden;
+    box-shadow: 1px 1px 20px #888;
+    border-radius: 5%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 200px;
+    top:35px;
+    width: 362px;
+   
+}
+.int{
+    position: relative;
+    width: 610px;
+    max-width: 100%;
+    margin: 0 auto;
+    top:-5%;
+    left:30px;
+    }
+
+.diapo{
+    width: 200px;;
+    margin:0;
+    padding:0;
+}
+.diapo li{
+    position:relative;
+    max-height:100%;
+}
+
+.diapo img{
+    display:block;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    padding: 40px;
+}
+
+.para,.parag{
+   width:70%;
+    line-height: 2;
+    margin: 40px;
+    text-indent: 10px;
+}
+#article-3{
+    margin:10%;
+
+}
+
+.portrait{
+    width: 250px;
+    height:300px
+}
+
+
+.ministere{
+    width: 350px;
+    height: 200px;
+}
+/*------------------------------FOOTER----------------------*/
+.naviga{
+    text-align: center;
+    font-weight: bold;
+}
+ .text{
+    text-align: right;
+    line-height: 2;
+ }
+ .copyright{
+    font-size: 10px;
+    position: relative;
+    left:5%;
+ }
+ /*------------------------------PAGE CONSEIL---------------------------- */
+div.contenu p{
+    font-size: 18px;
+}
+div.contenu{
+    margin:auto;
+    text-align:center;
+    display: block;
+    width: 100%;
+}
+div.contenu h2{
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+}
+div.contenu h3{
+    font-size: 18px;
+    color:indianred;
+}
+
+div.contenu h1{
+    color:dodgerblue;
+}
+.li{
+    font-style: italic;
+}
+.contenu .plus{
+    font-style: italic;
+    font-size: 15px;
+    text-align: end;
+}
+.conclusion{
+    color:dodgerblue;
+}
+.contenu .italic{
+    font-style: italic;
+    font-size: 12px;
+}
+.conclure{
+    color:brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.bibliographie{
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #CCB6B4;
+    border-radius: 15px;
+    text-align: justify;
+    overflow: hidden;
+    margin: 5%;
+}
+figure img{
+    display: block;
+    margin: auto;
+}
+
+figure figcaption{
+    text-align: left;
+}
+figcaption{
+    font-size: 10px;
+    font-style: italic;
+}
+
+/*---------------------------------------PAGE CONTACT--------------------------- */
+form{
+    background-color:#CCB6B4;
+    border-radius: 20px;  
+    margin:50px;
+    width: 800px;
+    margin: auto;
+}
+.formulaire{
+   margin: 20px;
+
+}
+.contact{
+  text-align: left;  
+  padding: 25px;
+}
+.separation{
+    width: 100%;
+    height: 1px;
+    background-color:black;
+}
+.formulaire{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+form .formulaire .groupe{
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+input {
+   margin-top:5px;
+   border:1px solid black;
+}
+form .formulaire .droite{
+    display: flex;
+   margin-left: 5%;
+}
+
+form .formulaire label{
+    display: flex;
+}
+textarea{
+    margin-top:5px;
+    padding: 10px;
+    background-color:#FFEDEC;
+    border:2px solid black;
+    border-radius: 5px;
+    
+}
+select{
+    background-color:#FFEDEC;
+    border:none;
+    border-radius: 5px;
+}
+.pied-form{
+    padding: 10px;
+    text-align: center;
+}
+button{
+    background-color:#FFEDEC;
+    border-radius: 5px;
+    padding: 2px;
+    border:none;
+    cursor:pointer;
+}
+
+/* ------------------------------PAGE DEVELOPPEMENT DE L'ENFANT----------------------*/
+
+.bodyilyece{
+    
+        background: linear-gradient(-45deg, darksalmon, #cc7289, #4edbdb, #aa67f7);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+.plateforme{
+    position:relative;
+    left:130%;
+    bottom: 30%;
+    width:90%;
+    line-height: 1.6;
+    margin: 35px;
+    font-size: 100%;
+}
+.republique2{
+    padding:40px;
+    display: flex;
+    position:relative;
+    bottom:300px;
+    margin:0 -5%;
+}
+.scientifique2{
+    position:relative;
+    border: 6px solid rgb(246, 234, 234);
+    overflow: hidden;
+    box-shadow: 1px 1px 20px rgb(0, 0, 0);
+    border-radius: 5%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    top:50px;
+    left:8%;
+    height: 415px;
+    width: 602px;
+}
+.portrait2{
+    position: relative;
+    height:250px;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+    bottom: 7%;
+}
+    
+.contenter{
+    padding:40px;
+    display: flex;
+    position: relative;
+    top:-40px;
+    left:-5%;
+    }
+    
+
+.houde2{
+    position: relative;
+    height:250px;
+    border: 6px solid #FFF;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px #888;
+    border-radius: 5%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    left:15%
+}
+.nationale2{
+    position: relative;
+    width: 600px;
+    border: 6px solid rgb(246, 234, 234);
+    overflow: hidden;
+    box-shadow: 1px 1px 20px rgb(0, 0, 0);
+    border-radius: 5%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 400px;
+    top: 650px;
+}
+.ministere2{
+    width: 600px;
+    height: 400px;
+}
+.ministere3{
+    width: 602px;
+    height: 415px;
+}
+
+.oliviere{
+    margin:10% -5%;
+    display: flex;
+    position: relative;
+    right: 10%;
+}  
+.blocilyece{
+    position: relative;
+    width: 610px;
+    border: 6px solid #FFF;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px #888;
+    border-radius: 5%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    top:40px;
+}
+.ilyecepara{
+width:90%;
+line-height: 1.6;
+margin: 35px;
+font-size: 100%;
+}
+.ilyeceparag,.ilyeceparagr{
+    width:90%;
+    line-height: 1.6;
+    margin: 35px;
+    font-size: 100%;
+    text-align: center;  
+}
+
+.diaporamailyece{
+    
+    width:400%;
+    margin:0;
+    padding:0;
+}
+.diaporama li{
+    position:relative;
+    max-height:100%;
+}
+
+.diaporama img{
+
+    display:block;
+}
+/* DIV */
+.boxe{
+    display: flex;
+    padding-top:7%;
+    margin:10% 0;
+}
+.introilyece{
+    position: relative;
+    width: 613px;
+    border: 6px solid #FFF;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px rgb(0, 0, 0);
+    border-radius: 5%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    top:40px;
+    left:2%;
+    height: 300px;
+
+}
+/*----------UL----- */
+.diapoilyece{
+    animation: slideilyece 4s ease infinite 0s;
+    display:flex;
+    width:400%;
+    margin:0;
+    padding:0;
+}
+@keyframes slideilyece {
+    0%, 14.81%, 100% {
+      transform: translate(0,0);
+    }
+    25.93%, 40.74% {
+      transform: translate(-25%,0);
+    }
+   
+    }
+
+
+ /*--------------------------------------RESPONSIVE--------------------------------*/
+@media screen and (max-width:800px){
+    .bloc{
+        display: block;
+        width: 100%;
+    }
+    .blocilyece{
+        display: block;
+        width:100%;
+    }
+    .bloc img{
+        width: 100%;
+        display: block;
+    }
+    .blocilyece img{
+        display: block;
+        width: 100%;
+    }
+    .burger{
+        z-index: 1;
+    }
+    .un{
+        background-color:mistyrose
+    }
+    #menu_deroulant{
+        width: 100%;
+    }
+    #menu_burger>div{
+        width: 100%;
+        display: block;
+    }
+    .burger{
+        display: block;
+        width: 100%;
+    }
+    #menu_burger{
+        display: none;
+    }
+    #sous_menu{
+        text-align: left;
+      }
+      #sous_menu{
+        display: none;
+      }
+      #sous-menu:hover{
+        display: block;
+      }
+     
+      .ac{
+        position: relative;
+        left:15px;
+      }
+    .titre,.mo{
+        display: none;
+    }
+    .pb{
+        margin:60px;
+    }
+    .intro,.houde,.nationale,.scientifique,.introilyece,.houde2{
+        display: none; 
+    }
+    .dive{
+        margin: auto;
+        top:20%;
+        right:10%;
+    }
+    .box,.olivier,.republique,.content,.boxe{
+    display: block;
+    width: 100%;
+    margin:0 5px;
+    white-space: pre-line;
+    }
+    .boxe,.oliviere,.republique,.contenter,.ilyecepara,.ilyeceparag,.plateforme, .ol{
+    display: block;
+    width: 100%;
+    margin:0 -6%;
+    white-space: pre-line;
+    }
+    .ilyeceparagr{
+    display: block;
+    width: 100%;
+    margin:0 -10%;
+    white-space: pre-line;
+    }
+    .parag,.ol{
+        display: block;
+        width: 100%;
+        white-space: pre-line;
+        margin:0 -15%;
+    }
+    .republique2{
+        bottom:0;
+        display:block;
+
+    }
+    .contenter{
+        display: block;
+    }
+    .scientifique2{
+        border:none;
+        border-radius: 0;
+        box-shadow: none;
+        overflow: visible;
+    }
+    .nationale2{
+        position:static;
+        border:none;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .republique2 img{
+        width: 150%;
+        height: 150%;
+    }
+    .scientifique2 img{
+        width: 150%;
+        height: 100%;
+        margin:0 -10%;
+    }
+    
+    .plateforme{
+       position: static;
+       bottom:0;
+       left:0;
+    }
+    #contenu_page{
+        display: block;
+        width: 100%;
+    }
+   article{
+    display: block;
+    width: 100%;
+   }
+   .edu{
+    white-space: pre-line;
+   }
+   .eduilyece{
+    white-space: pre-line;
+   }
+ .contente{
+    display: flex;
+    flex-direction: column;
+ }
+ .bibliographie,.para{
+    white-space: pre-line ;
+ }
+ figure img{
+    width:100%;
+    height: 100%;
+
+}
+form{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+}
+/*------------------------------------FIN-----------------------*/

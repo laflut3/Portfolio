@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="css/site.css">
+</head>
+<body>
+  <header class="un">
+    <div id="site-root">
+    <a href="contact.html" class="bouton">
+      <img src="img/arrow-up-solid.svg" alt="flèche" class="svg">
+    </a>
+    <nav class="nav" id="nav">
+      <div id="logo_fixe">
+        <img class="logo" src="img/logo.png" alt="logo">
+      </div>
+      <div class="menu">
+        <ul class="ul">
+          <li class="titre">
+            <a href="site.html">Accueil</a>
+          </li>
+          <li class="mo">
+            <a href="#">Général</a>
+            <div class="submenu">
+              <div class="submenu_b">
+                <ul id="submenu">
+                  <li>
+                    <a class="dvpm" href="cognitif.html">➤ Développement de l'enfant </a>
+                    <a href="conseil.html">➤ Conseils aux parents</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          <li class="titre">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="burger">
+        <img src="img/burger.png" alt="burger" class="image">
+        <div id="menu_burger">
+          <div><a class="ac" href="site.html">Accueil</a></div>
+          <div id="menu_deroulant">
+            <a class="ac" href="#">Général</a>
+            <div id="sous_menu">
+              <div><a href="cognitif.html">➤ Développement de l'enfant</a></div>
+              <div><a href="conseil.html">➤ Conseils aux parents</a></div>
+            </div>
+          </div>
+          <div><a class="ac" href="contact.html">Contact</a></div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  </header>
+
+  <form>
+    <h1 class="contact">Contactez nous</h1>
+  <div class="separation"></div>
+    <div class="formulaire">
+      <div class="gauche">
+        <div class="groupe">
+          <p>Nom :
+          <input id="nom" name="uname" placeholder="Dupont" type="text"></p>
+        </div>
+        <div class="groupe">
+          <p>Prénom :
+          <input id="prenom" name="uname" placeholder="Jean" type="text"></p>
+        </div>
+        <div class="groupe">
+          <label for="homme">M</label>
+          <input id="homme" name="uname" type="radio">
+          <label for="femme">F</label>
+          <input id="femme" name="uname" type="radio">
+          <label for="autre">Autre</label>
+          <input id="autre" name="uname" type="radio">
+            <select name="Autre">
+              <option value="choisir">Choisir</option>
+            </select>
+        </div>
+        <div class="groupe">
+          <label for="email">Adresse email :</label>
+          <input id="email" name="uname" placeholder="cognitif_20@gmail.com" type="email" required>
+        </div>
+        <div class="groupe">
+          <label for="date">Date de naissance :</label>
+          <input id="date" name="uname" type="date">
+        </div>
+       <div class="groupe">
+        <p>Code postal :
+        <input name="code_postal" type="text" placeholder="03579" pattern="[0-9]{5}" required></p>
+       </div> 
+       <div class="groupe">
+        <p>Pays :
+        <select name="pays">
+          <option value="fr">France</option>
+          <option value="usa">Etats-Unis</option>
+          <option value="chine">Chine</option>
+          <option value="Belgique">Belgique</option>
+          <option value="autre">Autre</option>
+        </select>
+        </p>
+      </div>
+        <div class="groupe">
+          <p>Date à laquelle vous souhaitez être recontacté :
+          <input type="date" name="recontacte" required></p>
+        </div>
+
+        <div class="groupe">
+          <p>Vous avez entendu parlé de nous via ?
+            <select name="entendu">
+                <option value="internet">Internet</option>
+                <option value="reseau">Réseaux sociaux</option>
+                <option value="amis">Un ami</option>
+                <option value="en classe">Ecole</option>
+            </select>
+            </p>
+        </div>
+       </div>
+    <div class="droite">
+      <div class="message">
+        <label>Message :</label>
+        <textarea></textarea>
+      </div>
+    </div>
+    
+  </div>
+  <div class="pied-form">
+    <button>Envoyer</button>
+    </div>
+  </form>
+  <footer class="footer">
+
+    <div class="contente">
+        <p class="text">Ce projet a été mené en collaboration avec : Carceles Franck , EL Allame Ilyece ,Torres
+            Léo ,Asiamar Chaïmae.</p>
+    </div>
+
+    <div>
+        <p class="copyright">© Cognitif, tous droits réservés.</p>
+        <a href="conseil.html">Bibliographie</a>
+    </div>
+
+</footer>
+</body>
+</html>
