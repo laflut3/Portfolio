@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PorteFolio</title>
-    <link rel="stylesheet" type="text/css" href="css/Portefolio_Style.css">
+    <link rel="stylesheet" type="text/css" href="../css/Portefolio_Style.css">
 </head>
 
 <body>
@@ -73,7 +73,7 @@
     </nav>
 
     <nav id="nav2">
-        <img src="./image/burger.svg" class="burger-icon">
+        <img src="../image/burger.svg" class="burger-icon">
         <div class="nav">
             <div class="menu-item">
                 <a href="Accueil.html">Accueil</a>
@@ -136,40 +136,39 @@
         </div>
     </nav>
 </header>
-
 <main>
-    <div>
-        <h1>Contact - Torres Leo</h1>
-        <div>
-            <p>
-                <strong>Nom:</strong> Torres Leo
+    <form method="POST" action="php/Question.php">
+        <fieldset>
+            <legend>Me contacter :</legend>
+            <p class="texteForm">
+                <label class="labelForm" for="nom">nom (obligatoire)</label> :
+                <input type="text" placeholder="Croque" name="nom" id="nom" required/>
             </p>
-            <p>
-                <strong>Étudiant en :</strong> Informatique (2ème année)
+            <p class="texteForm">
+                <label class="labelForm" for="prenom">prenom (obligatoire)</label> :
+                <input type="text" placeholder="Odile" name="prenom" id="prenom"  required/>
             </p>
-            <p>
-                <strong>IUT de Montpellier</strong>
+            <p class="texteForm">
+                <label class="labelForm" for="objet">objet (obligatoire)</label> :
+                <input type="text" placeholder="sujet n°1" name="objet" id="objet" required/>
             </p>
-            <p>
-                <strong>Téléphone :</strong> 07.83.08.49.92
+            <p class="texteForm">
+                <label class="labelForm" for="message">message (obligatoire)</label> :
+                <input type="text" placeholder="Lorem ipsum dolor sit amet" name="message" id="message"  required/>
             </p>
-            <p>
-                <strong>Adresse e-mail personnel :</strong>
-                <a href="mailto:leo0609leo@gmail.com">leo0609leo@gmail.com</a>
+            <p class="texteForm">
+                <label class="labelForm" for="societe">sociète (facultatif)</label> :
+                <input type="text" placeholder="fleo-sport" name="societe" id="societe" required/>
             </p>
-            <p>
-                <strong>Adresse e-mail professionnelle :</strong>
-                <a href="mailto:leo.torres@etu.umontpellier.fr">leo.torres@etu.umontpellier.fr</a>
+            <p class="texteForm">
+                <input type="submit" value="Envoyer"/>
             </p>
-        </div>
-    </div>
+        </fieldset>
+    </form>
 </main>
 
 <footer>
     <p id="signature">&copy; 2023 Torres Léo - Tous droits réservés</p>
-    <a href="Formulaire.html" class="lienFooter">
-        <p class="descriptionImg">Me contacter</p>
-    </a>
 </footer>
 </body>
 </html>
