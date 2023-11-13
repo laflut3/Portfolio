@@ -1,2 +1,2 @@
 # Portfolio
-site web de tout mes projets personnel, et scolaire.
+site web de tout mes projets personnels, et scolaires.
