@@ -173,35 +173,43 @@ h2 {
 
 /*competence*/
 details[open] #java{
-    width: 700px;
+    width: 900px;
+    border-radius: 10px;
 }
 
 details[open] #FX{
-    width: 400px;
+    width: 550px;
+    border-radius: 10px;
 }
 
 details[open] #css{
-    width: 500px;
+    width: 650px;
+    border-radius: 10px;
 }
 
 details[open] #php{
-    width: 250px;
+    width: 400px;
+    border-radius: 10px;
 }
 
 details[open] #sql{
     width: 400px;
+    border-radius: 10px;
 }
 
 details[open] #c{
-    width: 550px;
+    width: 750px;
+    border-radius: 10px;
 }
 
 details[open] #arduino{
     width: 150px;
+    border-radius: 10px;
 }
 
 details[open] #virtualBox{
     width: 150px;
+    border-radius: 10px;
 }
 
 /*!*carroussel*!*/
@@ -676,6 +684,14 @@ footer {
     #SAE105:hover ~ div{
         display: flex;
     }
+}
+
+/*page du CV*/
+
+#CV{
+    text-align: center;
+    height: 100%;
+    width: 100%;
 }
 
 
