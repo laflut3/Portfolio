@@ -531,8 +531,6 @@ a >.logo {
     text-align: left;
 }
 
-
-
 @media screen and (min-width: 1577px){
     .SAEGlobal>.notSelected {
         display: none;
