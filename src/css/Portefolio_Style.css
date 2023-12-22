@@ -11,24 +11,47 @@ html {
     box-sizing: border-box;
 }
 
-#photoIntro{
-    width: 350px;
-    height: 350px;
-    border-radius: 20px;
-    border: none;
+main{
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #666666;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
 }
 
 body {
-    color: #333333;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 16px;
-    line-height: 1.6;
-    border: none;
+     color: #333333;
+     margin: 0 auto;
+     padding: 0;
+     box-sizing: border-box;
+     font-size: 16px;
+     line-height: 1.6;
+     border: none;
 }
 
-/* Header */
 header {
     background-color: #333333;
     color: #ffffff;
@@ -37,12 +60,22 @@ header {
 }
 
 nav {
-    display: flex;
-    gap: 100px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+     display: flex;
+     gap: 100px;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+ }
+
+a {
+    text-decoration: none;
 }
+
+p > em {
+    font-weight: bold;
+}
+
+/* nav bar */
 
 .menu-item {
     position: relative;
@@ -94,29 +127,46 @@ nav {
     border-bottom-right-radius: 20px;
 }
 
-/* contenue du main general*/
-main {
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding: 20px;
-
+#nav2 {
+    display: none;
 }
 
-h1 {
+.menu-item:hover > a {
+    background-color: #555;
+    color: #fff;
+}
+
+.menu-item > a {
     text-align: center;
-    font-size: 50px;
-    margin-bottom: 20px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-h2 {
-    color: #666666;
-    font-size: 30px;
-    margin-top: 30px;
+/* pied de page */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333333;
+    color: #ffffff;
 }
 
-/* Styles pour l'acceuil */
+#signature {
+    font-size: 16px;
+}
+
+/* ligne de separation */
+.separator {
+    border-top: 3px solid #ccc;
+    margin: 20px 0;
+}
+
+/* ------------------------ *!* Acceuil *!* ------------------------ */
+#photoIntro{
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    border: none;
+}
+
 .presentation p {
     font-size: 20px;
     text-align: justify;
@@ -150,6 +200,15 @@ h2 {
     font-weight: bold;
     cursor: pointer;
 }
+
+.imgPresent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* competence */
 
 .competenceGeneral{
     display: flex;
@@ -212,7 +271,8 @@ details[open] #virtualBox{
     border-radius: 10px;
 }
 
-/*!*carroussel*!*/
+
+/* carroussel */
 
 #diaporama-container {
     display: flex;
@@ -260,40 +320,10 @@ details[open] #virtualBox{
     }
 }
 
-/*general css*/
-.separator {
-    border-top: 3px solid #ccc;
-    margin: 20px 0;
-}
-
-.descriptionImg {
-    color: #888;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 5px;
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* Images */
-.imgPresent {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
+/* -------------------- *!* projet de semestre *!* -------------------- */
 .img {
     margin: 10px;
     text-align: center;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
 }
 
 .THM{
@@ -309,103 +339,6 @@ img {
 a >.logo {
     border-radius: 100%;
 }
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333333;
-    color: #ffffff;
-}
-
-p > em {
-    font-weight: bold;
-}
-
-#nav2 {
-    display: none;
-}
-
-.menu-item:hover > a {
-    background-color: #555;
-    color: #fff;
-}
-
-.menu-item > a {
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.lienFooter{
-    text-decoration: none;
-}
-
-/* Projet personnel */
-#lienFleo{
-    text-align: center;
-}
-
-#lienFleo > a{
-    font-size: 30px;
-}
-
-/* Formulaire */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-legend {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.texteForm {
-    margin: 10px 0;
-}
-
-.labelForm {
-    font-weight: bold;
-}
-
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #555;
-}
-
-/* Styles pour le pied de page */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333333;
-    color: #ffffff;
-}
-
-#signature {
-    font-size: 16px;
-}
-
-/* Styles pour les projet de semestre */
 
 .imgProjet{
     width: 250px;
@@ -446,19 +379,26 @@ footer {
     text-align: center;
 }
 
+.descriptionImg {
+    display: none
+}
+
+.ouvert .descriptionImg{
+    color: #888;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+    text-decoration: none;
+    display: block;
+}
 /*------------------------*/
 
 #texteSAE101{
     display: none;
 }
 
-#SAE101:active #texteSAE101{
+#SAE101.ouvert #texteSAE101{
     display: block;
-}
-
-#SAE101:active{
-    display: block;
-    width: 100%;
 }
 
 /*------------------------*/
@@ -466,12 +406,8 @@ footer {
     display: none;
 }
 
-#SAE102:active #texteSAE102{
+#SAE102.ouvert #texteSAE102{
     display: block;
-}
-
-#SAE102:active{
-    width: 100%;
 }
 
 /*------------------------*/
@@ -480,12 +416,8 @@ footer {
     display: none;
 }
 
-#SAE103:active #texteSAE103{
+#SAE103.ouvert #texteSAE103{
     display: block;
-}
-
-#SAE103:active{
-    width: 100%;
 }
 
 /*------------------------*/
@@ -494,12 +426,8 @@ footer {
     display: none;
 }
 
-#SAE104:active #texteSAE104{
+#SAE104.ouvert #texteSAE104{
     display: block;
-}
-
-#SAE104:active{
-    width: 100%;
 }
 
 /*------------------------*/
@@ -508,12 +436,8 @@ footer {
     display: none;
 }
 
-#SAE105:active #texteSAE105{
+#SAE105.ouvert #texteSAE105{
     display: block;
-}
-
-#SAE105:active{
-    width: 100%;
 }
 
 /*------------------------*/
@@ -522,12 +446,8 @@ footer {
     display: none;
 }
 
-#SAE106:active #texteSAE106{
+#SAE106.ouvert #texteSAE106{
     display: block;
-}
-
-#SAE106:active{
-    width: 100%;
 }
 
 /*------------------------*/
@@ -536,12 +456,8 @@ footer {
     display: none;
 }
 
-#SAE201:active #texteSAE201{
+#SAE201.ouvert #texteSAE201{
     display: block;
-}
-
-#SAE201:active{
-    width: 100%;
 }
 
 /*------------------------*/
@@ -550,12 +466,8 @@ footer {
     display: none;
 }
 
-#SAE202:active #texteSAE202{
+#SAE202.ouvert #texteSAE202{
     display: block;
-}
-
-#SAE202:active{
-    width: 100%;
 }
 
 /*------------------------*/
@@ -564,12 +476,8 @@ footer {
     display: none;
 }
 
-#SAE203:active #texteSAE203{
+#SAE203.ouvert #texteSAE203{
     display: block;
-}
-
-#SAE203:active{
-    width: 100%;
 }
 
 /*------------------------*/
@@ -578,12 +486,8 @@ footer {
     display: none;
 }
 
-#SAE204:active #texteSAE204{
+#SAE204.ouvert #texteSAE204{
     display: block;
-}
-
-#SAE204:active{
-    width: 100%;
 }
 
 /*------------------------*/
@@ -592,12 +496,8 @@ footer {
     display: none;
 }
 
-#SAE205:active #texteSAE205{
+#SAE205.ouvert #texteSAE205{
     display: block;
-}
-
-#SAE205:active{
-    width: 100%;
 }
 
 /*------------------------*/
@@ -606,13 +506,24 @@ footer {
     display: none;
 }
 
-#SAE206:active #texteSAE206{
+#SAE206.ouvert *{
     display: block;
 }
 
-#SAE206:active{
+/*------------------------*/
+
+#SAE206.ouvert, #SAE205.ouvert, #SAE204.ouvert, #SAE203.ouvert, #SAE202.ouvert, #SAE201.ouvert, #SAE106.ouvert, #SAE105.ouvert, #SAE104.ouvert, #SAE103.ouvert, #SAE102.ouvert, #SAE101.ouvert{
     width: 100%;
 }
+
+.ouvert .lienSae{
+    pointer-events: auto;
+}
+
+.lienSae{
+    pointer-events: none;
+}
+
 
 /*page de contact*/
 
@@ -620,8 +531,10 @@ footer {
     text-align: left;
 }
 
+
+
 @media screen and (min-width: 1577px){
-    .SAEGlobal:active > div:not(:hover) {
+    .SAEGlobal>.notSelected {
         display: none;
     }
 }
@@ -636,54 +549,6 @@ footer {
         width: 100%;
         margin: 10px 0;
     }
-
-    /*-----------------------*/
-
-    #SAE101:hover ~ div{
-        display: flex;
-    }
-
-    /*-----------------------*/
-
-    #SAE102:hover ~ div{
-        display: flex;
-    }
-
-    /*-----------------------*/
-
-    #SAE103:hover ~ div{
-        display: flex;
-    }
-
-    /*-----------------------*/
-
-    #SAE104:hover ~ div{
-        display: flex;
-    }
-
-    /*-----------------------*/
-
-    #SAE105:hover ~ div{
-        display: flex;
-    }
-
-    /*-----------------------*/
-
-    #SAE106:hover ~ div{
-        display: flex;
-    }
-
-    /*-----------------------*/
-
-    #SAE105:hover ~ div{
-        display: flex;
-    }
-
-    /*-----------------------*/
-
-    #SAE105:hover ~ div{
-        display: flex;
-    }
 }
 
 /*page du CV*/
@@ -694,6 +559,66 @@ footer {
     width: 100%;
 }
 
+/* ----------------- */
+*,*::before,*::after{box-sizing: border-box}
+
+input[type="checkbox"].menu_hamburger {
+    position: absolute;
+    left: -100vw;
+}
+
+.menu_hamburger+label{
+    cursor: pointer;
+    width: 80px;
+    height: 60px;
+    display:flex;
+    align-items:center;
+    margin:5rem auto;
+}
+
+.menu_hamburger+label span {
+    background-color: #6753ea;
+    width: inherit;
+    height: 10px;
+    position: relative;
+    transition: background 10ms 300ms;
+}
+
+.menu_hamburger+label span::before, .menu_hamburger+label span::after {
+    transition: top 300ms 350ms, transform 300ms 50ms;
+    position: absolute;
+    background-color: #6753ea;
+    width: inherit;
+    height: inherit;
+    content: "";
+}
+
+.menu_hamburger+label span::before {
+    top: -20px;
+}
+
+.menu_hamburger+label span::after {
+    top: 20px;
+}
+
+.menu_hamburger:checked+label span {
+    background: unset;
+}
+
+.menu_hamburger:checked+label span::after,
+.menu_hamburger:checked+label span::before {
+    transition: top 300ms 50ms, transform 300ms 350ms;
+    top: 0;
+}
+
+.menu_hamburger:checked+label span::before {
+    transform: rotate(45deg);
+}
+
+.menu_hamburger:checked+label span::after {
+    transform: rotate(-45deg);
+}
+/*--------------------------------------------------*/
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
