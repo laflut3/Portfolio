@@ -62,13 +62,6 @@
         </div>
         <div class="menu-item">
             <a href="Contact.html">Contact</a>
-            <div class="sousmenu">
-                <ul>
-                    <li>
-                        <a href="Formulaire.html">Me contacter</a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
 
@@ -125,13 +118,6 @@
             </div>
             <div class="menu-item">
                 <a href="Contact.html">Contact</a>
-                <div class="sousmenu">
-                    <ul>
-                        <li>
-                            <a href="Formulaire.html">Me contacter</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
     </nav>
@@ -143,11 +129,11 @@
         d'Evaluation) qui ont etait decisif dans mon apprentissages et le devellopement de mes competences
     </p>
     <div class="SAEGlobal">
-        <div id="SAE101">
+        <div id="SAE101" onclick="lockOpened('SAE101')">
             <p>
                 SAE 1.01 : Implementation
             </p>
-            <div class="imgPresent">
+            <div class="imgPresent" >
                 <div class="img">
                     <img src="../ressource/image/photoSAE1.01.png" alt="Code MM" class="imgProjet">
                 </div>
@@ -164,7 +150,7 @@
             </div>
         </div>
 
-        <div id="SAE102">
+        <div id="SAE102" onclick="lockOpened('SAE102')">
             <p>
                 SAE 1.02 : Comparaison d'algo
             </p>
@@ -186,7 +172,7 @@
             </div>
         </div>
 
-        <div id="SAE103">
+        <div id="SAE103" onclick="lockOpened('SAE103')">
             <p>
                 SAE 1.03 : Installation poste
             </p>
@@ -211,7 +197,7 @@
             </div>
         </div>
 
-        <div id="SAE104">
+        <div id="SAE104" onclick="lockOpened('SAE104')">
             <p>
                 SAE 1.04 : Création BD
             </p>
@@ -232,12 +218,12 @@
             </div>
         </div>
 
-        <div id="SAE105">
+        <div id="SAE105" onclick="lockOpened('SAE105')">
             <p>
                 SAE 1.05 : Recueil de besoins
             </p>
             <div class="img">
-                <a href="../ressource/SAE/sae-1.05/index.html">
+                <a class="lienSae" target="_blank" href="../ressource/SAE/sae-1.05/index.html">
                     <img src="../ressource/SAE/sae-1.05/images/favicon.png" alt="logo site sae 1.05" class="imgProjet" id="imgSansBordure">
                     <p class="descriptionImg">clicker sur l'image pour aller sur la page de la SAE 1.05</p>
                 </a>
@@ -256,12 +242,12 @@
             </div>
         </div>
 
-        <div id="SAE106">
+        <div id="SAE106" onclick="lockOpened('SAE106')">
             <p>
                 SAE 1.06 : Environnement éco
             </p>
             <div class="img">
-                <a href="../ressource/SAE/SITE_sae%201.06/site.html">
+                <a class="lienSae" target="_blank" href="../ressource/SAE/SITE_sae%201.06/site.html">
                     <img src="../ressource/SAE/SITE_sae%201.06/img/logo.png" alt="SAE 1.06" class="imgProjet" id="imgSansBordure2">
                     <p class="descriptionImg">clicker sur l'image pour aller sur la page de la SAE 1.06</p>
                 </a>
@@ -293,4 +279,5 @@
     </a>
 </footer>
 </body>
+<script src="JS/Script.js"></script>
 </html>
