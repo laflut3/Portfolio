@@ -11,7 +11,7 @@ html {
     box-sizing: border-box;
 }
 
-main{
+main {
     min-height: 100vh;
 }
 
@@ -21,7 +21,6 @@ main {
     margin: 0 auto;
     box-sizing: border-box;
     padding: 20px;
-
 }
 
 h1 {
@@ -43,13 +42,13 @@ img {
 }
 
 body {
-     color: #333333;
-     margin: 0 auto;
-     padding: 0;
-     box-sizing: border-box;
-     font-size: 16px;
-     line-height: 1.6;
-     border: none;
+    color: #333333;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.6;
+    border: none;
 }
 
 header {
@@ -60,12 +59,12 @@ header {
 }
 
 nav {
-     display: flex;
-     gap: 100px;
-     justify-content: center;
-     align-items: center;
-     flex-wrap: wrap;
- }
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 a {
     text-decoration: none;
@@ -84,7 +83,7 @@ p > em {
 .menu-item a {
     color: #ffffff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 0 0 0 20px;
     display: block;
 }
 
@@ -111,11 +110,11 @@ p > em {
     transition: height 1s;
 }
 
-.but:hover .sousmenu2{
+.but:hover .sousmenu2 {
     display: block;
 }
 
-.sousmenu2{
+.sousmenu2 {
     display: none;
     position: absolute;
     top: 0;
@@ -125,6 +124,26 @@ p > em {
     z-index: 1;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+.boiteDeplianteNav summary {
+    color: #f0f0f0;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boiteDeplianteNav {
+    display: block;
+    background-color: #333333;
+    border-radius: 20px;
+    margin: 0 40px 10px 30px;
+    padding: 5px 0 5px 20px;
+    text-align: left;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 #nav2 {
@@ -160,7 +179,7 @@ footer {
 }
 
 /* ------------------------ *!* Acceuil *!* ------------------------ */
-#photoIntro{
+#photoIntro {
     width: 350px;
     height: 350px;
     border-radius: 20px;
@@ -173,28 +192,28 @@ footer {
     margin: 10px;
 }
 
-.presentation div{
+.presentation div {
     margin: 20px;
 }
 
-.presentation{
+.presentation {
     display: flex;
     flex-direction: column;
 }
 
-.texteBiographie{
+.texteBiographie {
     color: #f0f0f0;
     padding: 10px;
 }
 
-.boiteDepliante{
+.boiteDepliante {
     display: block;
     background-color: #333333;
     padding: 20px;
     border-radius: 20px;
 }
 
-.boiteDepliante summary{
+.boiteDepliante summary {
     color: #f0f0f0;
     font-size: 30px;
     font-weight: bold;
@@ -210,7 +229,7 @@ footer {
 
 /* competence */
 
-.competenceGeneral{
+.competenceGeneral {
     display: flex;
 }
 
@@ -221,52 +240,52 @@ footer {
     width: 10px;
 }
 
-.texteComp{
+.texteComp {
     width: 110px;
 }
 
-.texteComp p{
+.texteComp p {
     color: #f0f0f0;
     margin: 0;
 }
 
 /*competence*/
-details[open] #java{
+details[open] #java {
     width: 900px;
     border-radius: 10px;
 }
 
-details[open] #FX{
+details[open] #FX {
     width: 550px;
     border-radius: 10px;
 }
 
-details[open] #css{
+details[open] #css {
     width: 650px;
     border-radius: 10px;
 }
 
-details[open] #php{
+details[open] #php {
     width: 400px;
     border-radius: 10px;
 }
 
-details[open] #sql{
+details[open] #sql {
     width: 400px;
     border-radius: 10px;
 }
 
-details[open] #c{
+details[open] #c {
     width: 750px;
     border-radius: 10px;
 }
 
-details[open] #arduino{
+details[open] #arduino {
     width: 150px;
     border-radius: 10px;
 }
 
-details[open] #virtualBox{
+details[open] #virtualBox {
     width: 150px;
     border-radius: 10px;
 }
@@ -279,28 +298,28 @@ details[open] #virtualBox{
     justify-content: center;
 }
 
-.diaporama{
-    display:flex;
+.diaporama {
+    display: flex;
     align-items: center;
-    width:400px;
-    overflow:hidden;
-    margin:0 auto;
-    padding:0;
+    width: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
 }
 
-.diaporama li{
-    position:relative;
-    max-height:100%;
+.diaporama li {
+    position: relative;
+    max-height: 100%;
 }
 
-.diaporama img{
-    display:block;
-    width:400px;
-    border:none;
+.diaporama img {
+    display: block;
+    width: 400px;
+    border: none;
     animation: slide 8s infinite;
 }
 
-.bloc{
+.bloc {
     display: block;
     width: 610px;
     border: 6px solid #FFF;
@@ -309,10 +328,10 @@ details[open] #virtualBox{
     border-radius: 20px;
     box-sizing: border-box;
     text-align: center;
- }
+}
 
 @keyframes slide {
-    50%{
+    50% {
         transform: translate(-400px, 0);
     }
     100% {
@@ -326,34 +345,34 @@ details[open] #virtualBox{
     text-align: center;
 }
 
-.THM{
+.THM {
     width: 561px;
     height: 397px;
 }
 
-.logo{
+.logo {
     width: 250px;
     height: 250px;
 }
 
-a >.logo {
+a > .logo {
     border-radius: 100%;
 }
 
-.imgProjet{
+.imgProjet {
     width: 250px;
     height: 200px;
     border-radius: 10px;
     border: none;
 }
 
-.SAEGlobal{
+.SAEGlobal {
     display: flex;
     flex-direction: row;
     cursor: pointer;
 }
 
-.SAEGlobal > div{
+.SAEGlobal > div {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -364,18 +383,18 @@ a >.logo {
     margin-left: 10px;
 }
 
-.SAEGlobal > div p{
+.SAEGlobal > div p {
     color: #f0f0f0;
     text-align: center;
 }
 
-.SAEGlobal li{
+.SAEGlobal li {
     color: #f0f0f0;
     text-align: center;
     list-style: none;
 }
 
-.texteS{
+.texteS {
     text-align: center;
 }
 
@@ -383,7 +402,7 @@ a >.logo {
     display: none
 }
 
-.ouvert .descriptionImg{
+.ouvert .descriptionImg {
     color: #888;
     text-align: center;
     font-size: 14px;
@@ -391,136 +410,137 @@ a >.logo {
     text-decoration: none;
     display: block;
 }
+
 /*------------------------*/
 
-#texteSAE101{
+#texteSAE101 {
     display: none;
 }
 
-#SAE101.ouvert #texteSAE101{
+#SAE101.ouvert #texteSAE101 {
     display: block;
 }
 
 /*------------------------*/
-#texteSAE102{
+#texteSAE102 {
     display: none;
 }
 
-#SAE102.ouvert #texteSAE102{
-    display: block;
-}
-
-/*------------------------*/
-
-#texteSAE103{
-    display: none;
-}
-
-#SAE103.ouvert #texteSAE103{
+#SAE102.ouvert #texteSAE102 {
     display: block;
 }
 
 /*------------------------*/
 
-#texteSAE104{
+#texteSAE103 {
     display: none;
 }
 
-#SAE104.ouvert #texteSAE104{
+#SAE103.ouvert #texteSAE103 {
     display: block;
 }
 
 /*------------------------*/
 
-#texteSAE105{
+#texteSAE104 {
     display: none;
 }
 
-#SAE105.ouvert #texteSAE105{
+#SAE104.ouvert #texteSAE104 {
     display: block;
 }
 
 /*------------------------*/
 
-#texteSAE106{
+#texteSAE105 {
     display: none;
 }
 
-#SAE106.ouvert #texteSAE106{
+#SAE105.ouvert #texteSAE105 {
     display: block;
 }
 
 /*------------------------*/
 
-#texteSAE201{
+#texteSAE106 {
     display: none;
 }
 
-#SAE201.ouvert #texteSAE201{
+#SAE106.ouvert #texteSAE106 {
     display: block;
 }
 
 /*------------------------*/
 
-#texteSAE202{
+#texteSAE201 {
     display: none;
 }
 
-#SAE202.ouvert #texteSAE202{
+#SAE201.ouvert #texteSAE201 {
     display: block;
 }
 
 /*------------------------*/
 
-#texteSAE203{
+#texteSAE202 {
     display: none;
 }
 
-#SAE203.ouvert #texteSAE203{
+#SAE202.ouvert #texteSAE202 {
     display: block;
 }
 
 /*------------------------*/
 
-#texteSAE204{
+#texteSAE203 {
     display: none;
 }
 
-#SAE204.ouvert #texteSAE204{
+#SAE203.ouvert #texteSAE203 {
     display: block;
 }
 
 /*------------------------*/
 
-#texteSAE205{
+#texteSAE204 {
     display: none;
 }
 
-#SAE205.ouvert #texteSAE205{
+#SAE204.ouvert #texteSAE204 {
     display: block;
 }
 
 /*------------------------*/
 
-#texteSAE206{
+#texteSAE205 {
     display: none;
 }
 
-#SAE206.ouvert *{
+#SAE205.ouvert #texteSAE205 {
     display: block;
 }
 
 /*------------------------*/
 
-#SAE206.ouvert, #SAE205.ouvert, #SAE204.ouvert, #SAE203.ouvert, #SAE202.ouvert, #SAE201.ouvert, #SAE106.ouvert, #SAE105.ouvert, #SAE104.ouvert, #SAE103.ouvert, #SAE102.ouvert, #SAE101.ouvert{
+#texteSAE206 {
+    display: none;
+}
+
+#SAE206.ouvert * {
+    display: block;
+}
+
+/*------------------------*/
+
+#SAE206.ouvert, #SAE205.ouvert, #SAE204.ouvert, #SAE203.ouvert, #SAE202.ouvert, #SAE201.ouvert, #SAE106.ouvert, #SAE105.ouvert, #SAE104.ouvert, #SAE103.ouvert, #SAE102.ouvert, #SAE101.ouvert {
     width: 100%;
 }
 
-.ouvert .lienSae{
+.ouvert .lienSae {
     pointer-events: auto;
 }
 
-.lienSae{
+.lienSae {
     pointer-events: none;
 }
 
@@ -531,19 +551,19 @@ a >.logo {
     text-align: left;
 }
 
-@media screen and (min-width: 1577px){
-    .SAEGlobal>.notSelected {
+@media screen and (min-width: 1577px) {
+    .SAEGlobal > .notSelected {
         display: none;
     }
 }
 
 @media screen and (max-width: 1577px) {
-    .SAEGlobal{
+    .SAEGlobal {
         flex-direction: column;
         padding: 15px;
     }
 
-    .SAEGlobal > div{
+    .SAEGlobal > div {
         width: 100%;
         margin: 10px 0;
     }
@@ -551,78 +571,161 @@ a >.logo {
 
 /*page du CV*/
 
-#CV{
+#CV {
     text-align: center;
     height: 100%;
     width: 100%;
 }
 
 /* ----------------- */
-*,*::before,*::after{box-sizing: border-box}
-
-input[type="checkbox"].menu_hamburger {
-    position: absolute;
-    left: -100vw;
-}
-
-.menu_hamburger+label{
+#burger-menu {
     cursor: pointer;
-    width: 80px;
-    height: 60px;
-    display:flex;
-    align-items:center;
-    margin:5rem auto;
-}
-
-.menu_hamburger+label span {
-    background-color: #6753ea;
-    width: inherit;
-    height: 10px;
+    height: 27px;
+    width: 27px;
+    overflow: visible;
     position: relative;
-    transition: background 10ms 300ms;
+    z-index: 2;
+
+    span, span:before, span:after {
+        background: black;
+        display: block;
+        height: 2px;
+        opacity: 1;
+        position: absolute;
+        transition: 0.3s ease-in-out;
+    }
+
+    span:before, span:after {
+        content: '';
+    }
+
+    span:before {
+        left: 0;
+        top: -10px;
+        width: 27px;
+    }
+
+    span {
+        right: 0;
+        top: 13px;
+        width: 27px;
+    }
+
+    span:after {
+        left: 0;
+        top: 10px;
+        width: 27px;
+    }
+
+    &.close {
+        span:before {
+            top: 0;
+            transform: rotate(90deg);
+            width: 27px;
+        }
+
+        span {
+            transform: rotate(-45deg);
+            top: 13px;
+            width: 27px;
+        }
+
+        span:after {
+            top: 0;
+            left: 0;
+            transform: rotate(90deg);
+            opacity: 0;
+            width: 0;
+        }
+    }
 }
 
-.menu_hamburger+label span::before, .menu_hamburger+label span::after {
-    transition: top 300ms 350ms, transform 300ms 50ms;
-    position: absolute;
-    background-color: #6753ea;
-    width: inherit;
-    height: inherit;
-    content: "";
+.no-scroll #nav2 {
+    padding: 0;
 }
 
-.menu_hamburger+label span::before {
-    top: -20px;
-}
-
-.menu_hamburger+label span::after {
-    top: 20px;
-}
-
-.menu_hamburger:checked+label span {
-    background: unset;
-}
-
-.menu_hamburger:checked+label span::after,
-.menu_hamburger:checked+label span::before {
-    transition: top 300ms 50ms, transform 300ms 350ms;
+#menu2 {
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
     top: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+
+    &.overlay {
+        visibility: visible;
+        opacity: 1;
+        padding-top: 100px;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        color: gainsboro;
+        display: block;
+        font-size: 32px;
+        margin-bottom: 0;
+        text-decoration: none;
+    }
 }
 
-.menu_hamburger:checked+label span::before {
-    transform: rotate(45deg);
+#menu2 a:hover {
+    text-decoration: underline;
 }
 
-.menu_hamburger:checked+label span::after {
+#menu2 {
+    max-height: 90vh; /* Ajustez la hauteur maximale selon vos besoins */
+    overflow-y: scroll; /* Ajoutez le défilement vertical si nécessaire */
+    padding-bottom: 20px; /* Ajoutez un espace en bas pour le dernier élément */
+}
+
+#menu2 {
+    max-height: 90vh; /* Ajustez la hauteur maximale selon vos besoins */
+    overflow-y: auto; /* Ajoutez le défilement vertical si nécessaire */
+    padding-bottom: 20px; /* Ajoutez un espace en bas pour le dernier élément */
+}
+
+.menu2.overlay {
+    display: block; /* Affichez le menu burger lorsque la classe overlay est présente */
+}
+
+#burger-menu.close span:before {
+    top: 0;
+    transform: rotate(90deg);
+    width: 27px;
+}
+
+#burger-menu.close span {
     transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
 }
+
+#burger-menu.close span:after {
+    top: 0;
+    left: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+    width: 0;
+}
+
 /*--------------------------------------------------*/
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
 
     header {
         background: #f0f0f0;
@@ -635,40 +738,15 @@ input[type="checkbox"].menu_hamburger {
         padding: 20px;
     }
 
-    #nav2 .nav {
-        display: none;
-        position: absolute;
-        background-color: #333333;
-    }
-
-    #nav2 .burger-icon {
-        border: none;
-        width: 32px;
-        height: 32px;
-    }
-
-    #nav2:hover .nav{
-        display: block;
-    }
-
     #nav-primaire {
         display: none;
     }
 
-    .menu-item {
-        margin-bottom: 10px;
-    }
-
-    .sousmenu{
-        left: 120px;
-        top: 0;
-    }
-
-    #carousel{
+    #carousel {
         display: block;
     }
 
-    .textePres{
+    .textePres {
         display: block;
     }
 }

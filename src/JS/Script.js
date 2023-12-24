@@ -22,3 +22,19 @@ function lockOpened(id) {
         }
     }
 }
+
+let burgerMenu = document.getElementById('burger-menu');
+
+let overlay = document.getElementById('menu');
+
+// Assurez-vous que votre script est exécuté après le chargement du DOM.
+document.addEventListener('DOMContentLoaded', function () {
+    let burgerMenu = document.getElementById('burger-menu');
+    let overlay = document.getElementById('menu2');
+
+    burgerMenu.addEventListener('click', function () {
+        this.classList.toggle("close");
+        overlay.classList.toggle("overlay");
+        document.body.classList.toggle("no-scroll");
+    });
+});

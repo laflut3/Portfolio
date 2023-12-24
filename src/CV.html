@@ -64,58 +64,84 @@
     </nav>
 
     <nav id="nav2">
-        <img src="../ressource/image/burger.svg" class="burger-icon">
-        <div class="nav">
+        <div id="burger-menu">
+            <span></span>
+        </div>
+        <div id="menu2">
             <div class="menu-item">
-                <a href="Accueil.html">Accueil</a>
-                <div class="sousmenu">
-                    <ul>
-                        <li>
-                            <a href="Accueil.html#Introduction">Introduction</a>
-                        </li>
-                        <li>
-                            <a href="Accueil.html#biographie">Biographie</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="menu-item">
-                <a href="Projet.html">Mes Projets</a>
-                <div class="sousmenu">
-                    <div class="but">
+                <div class="boiteDeplianteNav">
+                    <details>
+                        <summary>Acceuil</summary>
                         <ul>
                             <li>
-                                <a href="Projet.html#BUT">Universitaire</a>
+                                <a href="Accueil.html#Introduction">Introduction</a>
                             </li>
-
-                            <ul class="sousmenu2">
-                                <li>
-                                    <a href="semestre1.html">Semestre 1</a>
-                                </li>
-                                <li>
-                                    <a href="semestre2.html">Semestre 2</a>
-                                </li>
-                                <li>
-                                    <a href="semestre3.html">Semestre 3</a>
-                                </li>
-                                <li>
-                                    <a href="semestre4.html">Semestre 4</a>
-                                </li>
-                            </ul>
+                            <li>
+                                <a href="Accueil.html#biographie">Biographie</a>
+                            </li>
                         </ul>
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="Projet.html#personnel">Personnel</a>
-                        </li>
-                    </ul>
+                    </details>
                 </div>
             </div>
             <div class="menu-item">
-                <a href="CV.html" target="_blank">Mon CV</a>
+                <div class="boiteDeplianteNav">
+                    <details>
+                        <summary>Projet</summary>
+                        <div class="but">
+                            <ul>
+                                <li>
+                                    <a href="Projet.html">Introduction</a>
+                                </li>
+                                <li>
+                                    <a href="Projet.html#BUT">Universitaire</a>
+                                </li>
+
+                                <li>
+                                    <div class="boiteDeplianteNav">
+                                        <details>
+                                            <summary>projet Universitaire</summary>
+                                            <ul>
+                                                <li>
+                                                    <a href="semestre1.html">Semestre 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="semestre2.html">Semestre 2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="semestre3.html">Semestre 3</a>
+                                                </li>
+                                                <li>
+                                                    <a href="semestre4.html">Semestre 4</a>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="Projet.html#personnel">Personnel</a>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
             </div>
             <div class="menu-item">
-                <a href="Contact.html">Contact</a>
+                <div class="boiteDeplianteNav">
+                    <details>
+                        <summary>CV</summary>
+                        <a href="CV.html" target="_blank">Mon CV</a>
+                    </details>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="boiteDeplianteNav">
+                    <details>
+                        <summary>Contact</summary>
+                        <a href="Contact.html">Contact</a>
+                    </details>
+                </div>
             </div>
         </div>
     </nav>
@@ -128,11 +154,8 @@
 
 <footer>
     <p id="signature">&copy; 2023 Torres Léo - Tous droits réservés</p>
-    <a href="Formulaire.html" class="lienFooter">
-        <p class="descriptionImg">Me contacter</p>
-    </a>
 </footer>
 </body>
-
+<script src="JS/Script.js"></script>
 </html>
 
