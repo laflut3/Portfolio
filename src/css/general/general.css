@@ -1,0 +1,99 @@
+/* Réinitialisation des styles par défaut */
+html, body, div, h1, h2, p, a, img {
+    font-family: Arial, sans-serif;
+}
+
+/* Styles généraux */
+
+html {
+    background-color: #f0f0f0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #666666;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+body {
+    color: #333333;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.6;
+    border: none;
+}
+
+header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 0;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*p > em {*/
+/*    font-weight: bold;*/
+/*}*/
+
+@keyframes slide {
+    50% {
+        transform: translate(-400px, 0);
+    }
+    100% {
+        transform: translate(0px, 0);
+    }
+}
+
+/* -------------------- *!* projet de semestre *!* -------------------- */
+.img {
+    margin: 10px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header {
+        background: #f0f0f0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}

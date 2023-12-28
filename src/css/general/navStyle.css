@@ -1,0 +1,256 @@
+nav {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* nav bar */
+
+.menu-item {
+    position: relative;
+    text-align: center;
+}
+
+.menu-item a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.menu-item:hover .sousmenu {
+    display: block;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sousmenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333333;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.sousmenu a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    transition: height 1s;
+}
+
+.but:hover .sousmenu2 {
+    display: block;
+}
+
+.sousmenu2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 160px;
+    background-color: #333333;
+    min-width: 200px;
+    z-index: 1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.boiteDeplianteNav summary {
+    color: #f0f0f0;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boiteDeplianteNav {
+    display: block;
+    background-color: #333333;
+    border-radius: 20px;
+    margin: 0 40px 10px 30px;
+    padding: 5px 0 5px 20px;
+    text-align: left;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+#navBurger {
+    display: none;
+}
+
+.menu-item:hover > a {
+    background-color: #555;
+    color: #fff;
+}
+
+.menu-item > a {
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* ----------------- */
+#burger-menu {
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+
+    span, span:before, span:after {
+        background: black;
+        display: block;
+        height: 2px;
+        opacity: 1;
+        position: absolute;
+        transition: 0.3s ease-in-out;
+    }
+
+    span:before, span:after {
+        content: '';
+    }
+
+    span:before {
+        left: 0;
+        top: -10px;
+        width: 27px;
+    }
+
+    span {
+        right: 0;
+        top: 13px;
+        width: 27px;
+    }
+
+    span:after {
+        left: 0;
+        top: 10px;
+        width: 27px;
+    }
+
+    &.close {
+        span:before {
+            top: 0;
+            transform: rotate(90deg);
+            width: 27px;
+        }
+
+        span {
+            transform: rotate(-45deg);
+            top: 13px;
+            width: 27px;
+        }
+
+        span:after {
+            top: 0;
+            left: 0;
+            transform: rotate(90deg);
+            opacity: 0;
+            width: 0;
+        }
+    }
+}
+
+.no-scroll #navBurger {
+    padding: 0;
+}
+
+#menu2 {
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+
+    &.overlay {
+        visibility: visible;
+        opacity: 1;
+        padding-top: 100px;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        color: gainsboro;
+        display: block;
+        font-size: 32px;
+        margin-bottom: 0;
+        text-decoration: none;
+    }
+}
+
+#menu2 a:hover {
+    text-decoration: underline;
+}
+
+#menu2 {
+    max-height: 90vh; /* Ajustez la hauteur maximale selon vos besoins */
+    overflow-y: scroll; /* Ajoutez le défilement vertical si nécessaire */
+    padding-bottom: 20px; /* Ajoutez un espace en bas pour le dernier élément */
+}
+
+#menu2 {
+    max-height: 90vh; /* Ajustez la hauteur maximale selon vos besoins */
+    overflow-y: auto; /* Ajoutez le défilement vertical si nécessaire */
+    padding-bottom: 20px; /* Ajoutez un espace en bas pour le dernier élément */
+}
+
+.menu2.overlay {
+    display: block; /* Affichez le menu burger lorsque la classe overlay est présente */
+}
+
+#burger-menu.close span:before {
+    top: 0;
+    transform: rotate(90deg);
+    width: 27px;
+}
+
+#burger-menu.close span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+}
+
+#burger-menu.close span:after {
+    top: 0;
+    left: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+    width: 0;
+}
+
+/*--------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+    #navBurger {
+        display: block;
+        position: relative;
+        width: auto;
+        padding: 20px;
+    }
+
+    #nav-primaire {
+        display: none;
+    }
+}
