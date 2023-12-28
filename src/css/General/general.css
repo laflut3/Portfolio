@@ -41,6 +41,11 @@ img {
     border: 1px solid #ccc;
 }
 
+.img {
+    margin: 10px;
+    text-align: center;
+}
+
 body {
     color: #333333;
     margin: 0 auto;
@@ -62,9 +67,23 @@ a {
     text-decoration: none;
 }
 
-/*p > em {*/
-/*    font-weight: bold;*/
-/*}*/
+p > em {
+    font-weight: bold;
+}
+
+.boiteDepliante {
+    display: block;
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.boiteDepliante summary {
+    color: #f0f0f0;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 @keyframes slide {
     50% {
@@ -75,11 +94,7 @@ a {
     }
 }
 
-/* -------------------- *!* projet de semestre *!* -------------------- */
-.img {
-    margin: 10px;
-    text-align: center;
-}
+/* -------------------- *!* Projet de semestre *!* -------------------- */
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {

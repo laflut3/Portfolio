@@ -1,0 +1,94 @@
+/* -------------------- *!* Projet de semestre *!* -------------------- */
+
+.imgProjet {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    border: none;
+}
+
+.SAEGlobal {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.SAEGlobal > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 16.6%;
+    background-color: #333333;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.SAEGlobal > div p {
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.SAEGlobal li {
+    color: #f0f0f0;
+    text-align: center;
+    list-style: none;
+}
+
+.texteS {
+    text-align: center;
+}
+
+.ouvert .descriptionImg {
+    color: #888;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.descriptionImg {
+    display: none;
+}
+
+/*------------------------*/
+
+.lienSae {
+    pointer-events: none;
+}
+
+.texteSAE {
+    display: none;
+}
+
+.ouvert .texteSAE {
+    display: block;
+}
+
+.ouvert .lienSae {
+     pointer-events: auto;
+ }
+
+
+#SAE206.ouvert, #SAE205.ouvert, #SAE204.ouvert, #SAE203.ouvert, #SAE202.ouvert, #SAE201.ouvert, #SAE106.ouvert, #SAE105.ouvert, #SAE104.ouvert, #SAE103.ouvert, #SAE102.ouvert, #SAE101.ouvert {
+    width: 100%;
+}
+
+@media screen and (min-width: 1577px) {
+    .SAEGlobal > .notSelected {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1577px) {
+    .SAEGlobal {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .SAEGlobal > div {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

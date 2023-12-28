@@ -26,26 +26,6 @@
     padding: 10px;
 }
 
-.boiteDepliante {
-    display: block;
-    background-color: #333333;
-    padding: 20px;
-    border-radius: 20px;
-}
-
-.boiteDepliante summary {
-    color: #f0f0f0;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.imgPresent {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 /* competence */
 
 .competenceGeneral {
