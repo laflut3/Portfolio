@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PorteFolio</title>
+    <link rel="icon" href="../ressource/image/astronomie.png" sizes="any">
     <link rel="stylesheet" type="text/css" href="css/General/general.css">
     <link rel="stylesheet" type="text/css" href="css/General/navStyle.css">
     <link rel="stylesheet" type="text/css" href="css/General/footerStyle.css">
@@ -61,7 +62,7 @@
             </div>
         </div>
         <div class="menu-item">
-            <a href="CV.html" target="_blank">Mon CV</a>
+            <a href="CV.html">Mon CV</a>
         </div>
         <div class="menu-item">
             <a href="Contact.html">Contact</a>
@@ -79,10 +80,10 @@
                         <summary>Accueil</summary>
                         <ul>
                             <li>
-                                <a href="Accueil.html#Introduction">Introduction</a>
+                                <a href="Introduction">Introduction</a>
                             </li>
                             <li>
-                                <a href="Accueil.html#biographie">Biographie</a>
+                                <a href="biographie">Biographie</a>
                             </li>
                         </ul>
                     </details>
@@ -136,7 +137,7 @@
                 <div class="boiteDeplianteNav">
                     <details>
                         <summary>CV</summary>
-                        <a href="CV.html" target="_blank">Mon CV</a>
+                        <a href="CV.html">Mon CV</a>
                     </details>
                 </div>
             </div>
@@ -151,37 +152,40 @@
         </div>
     </nav>
 </header>
-
-<main>
-    <h1>Portfolio Torres Léo</h1>
+<main class="background">
+    <h1 id="Introduction" class="titre">Portfolio Torres Léo</h1>
     <article>
-        <h2 id="Introduction">Introduction</h2>
-        <div class="presentation">
-            <p>
-                Bienvenue sur mon Portfolio, un espace dédié à la présentation de mon parcours professionnel et
-                académique. En tant qu'étudiant en deuxième année de Bachelor Universitaire de Technologie (BUT) en
-                informatique, ce site constitue la vitrine de tous mes projets, autant scolaires que personnels.
-            </p>
-            <p>
-                Vous découvrirez les réalisations auxquelles j'ai contribué, mes compétences techniques, ainsi que ma
-                passion pour l'informatique et le développement de solutions innovantes. Mon Portfolio est le reflet de
-                mon engagement envers l'apprentissage continu et l'amélioration constante.
-            </p>
-            <p>
-                Je vous invite à explorer les différentes sections de ce site pour en apprendre davantage sur mon
-                parcours et mes réalisations.
-            </p>
-            <p>
-                Merci de votre visite, et je vous souhaite une agréable découverte de mon Portfolio.
-            </p>
-        </div>
-        <div class="imgPresent">
-            <div class="img">
-                <img src="../ressource/image/Dubai.jpg" alt="photo intro" id="photoIntro">
+        <h2 class="titre">Introduction</h2>
+        <div id="intro">
+            <div class="presentation" id="TexteIntro">
+                <p>
+                    Bienvenue sur mon Portfolio, un espace dédié à la présentation de mon parcours professionnel et
+                    académique. En tant qu'étudiant en deuxième année de Bachelor Universitaire de Technologie (BUT) en
+                    informatique, ce site constitue la vitrine de tous mes projets, autant scolaires que personnels.
+                </p>
+                <p>
+                    Vous découvrirez les réalisations auxquelles j'ai contribué, mes compétences techniques, ainsi que
+                    ma
+                    passion pour l'informatique et le développement de solutions innovantes. Mon Portfolio est le reflet
+                    de
+                    mon engagement envers l'apprentissage continu et l'amélioration constante.
+                </p>
+                <p>
+                    Je vous invite à explorer les différentes sections de ce site pour en apprendre davantage sur mon
+                    parcours et mes réalisations.
+                </p>
+                <p>
+                    Merci de votre visite, et je vous souhaite une agréable découverte de mon Portfolio.
+                </p>
+            </div>
+            <div id="imgIntroAcceuil">
+                <div class="img">
+                    <img src="../ressource/image/Dubai.jpg" alt="photo intro" id="photoIntro">
+                </div>
             </div>
         </div>
 
-        <h2 id="biographie">Ma Biographie</h2>
+        <h2 id="biographie" class="titre">Ma Biographie</h2>
         <div class="presentation">
             <div class="boiteDepliante">
                 <details>
@@ -194,9 +198,15 @@
                         une ville riche en histoire et en culture. Mon parcours éducatif est marqué par un engagement
                         constant pour l'excellence, dans tout ce que j'entreprend.
                     </p>
+                </details>
+            </div>
+
+            <div class="boiteDepliante">
+                <details>
+                    <summary>Présentation Parcours</summary>
                     <p class="texteBiographie">
-                        J'ai suivi mes études au lycée Jean Jaurès pour mon année de seconde. J'ai ensuite
-                        choisi de me diriger vers une filière plus adaptée à mon
+                        Pour commencer j'ai suivi mes études au lycée Jean Jaurès pour mon année de seconde.
+                        J'ai ensuite choisi de me diriger vers une filière plus adaptée à mon
                         profil... la STI2D (Science Technologique de l'Industrie et du Développement Durable), au sein
                         du lycée Jean Mermoz à Montpellier. Cette expérience a été enrichissante, me permettant
                         d'explorer les domaines de la technologie et du développement durable, qui m'ont passionné.
@@ -207,14 +217,8 @@
                         Actuellement en 2de année de Bachelor Universitaire de Technologie (BUT) en
                         informatique, je continue d'acquérir des compétences techniques et de développer ma passion.
                     </p>
-                </details>
-            </div>
-
-            <div class="boiteDepliante">
-                <details>
-                    <summary>Présentation Parcours</summary>
                     <p class="texteBiographie">
-                        A la suite de mes expériences de première année de BUT Informatique, mon choix de
+                        A la suite de mes expériences de première année de BUT, mon choix de
                         parcours s'est porté sur DACS (Déploiement d'Applications communicantes et sécurisées).
                     </p>
                     <p class="texteBiographie">
@@ -313,6 +317,20 @@
 
 <footer>
     <p id="signature">&copy; 2023 Torres Léo - Tous droits réservés</p>
+    <div id="RS">
+        <a href="https://www.instagram.com/le0_trs/">
+            <img src="../ressource/image/instagram.png" alt="insta" class="reseau">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100017006473298">
+            <img src="../ressource/image/facebook.png" alt="facebook" class="reseau">
+        </a>
+        <a href="https://www.linkedin.com/in/leo-torres-804687264/">
+            <img src="../ressource/image/linkedin.png" alt="linkedin" class="reseau">
+        </a>
+        <a href="https://github.com/laflut3">
+            <img src="../ressource/image/github.png" alt="github" class="reseau">
+        </a>
+    </div>
 </footer>
 </body>
 <script src="JS/Script.js"></script>

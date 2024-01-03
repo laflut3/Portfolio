@@ -8,3 +8,10 @@ footer {
 #signature {
     font-size: 16px;
 }
+
+.reseau{
+    height: 32px;
+    width: 32px;
+    border: none;
+    padding: 10px;
+}

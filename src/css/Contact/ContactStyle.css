@@ -1,3 +1,20 @@
 .contact-info {
     text-align: left;
 }
+
+#contact{
+    background-color: #1C3647;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+#info{
+    border: solid black 10px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+#contact p,h1{
+    color: white;
+}
+

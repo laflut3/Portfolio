@@ -1,4 +1,24 @@
 /* ------------------------ *!* Acceuil *!* ------------------------ */
+
+#intro{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    color: white;
+    background-color: #1E272D;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.titre{
+    color: white;
+}
+
+#imgIntroAcceuil {
+    flex: 1;
+    align-self: center;
+}
+
 #photoIntro {
     width: 350px;
     height: 350px;
@@ -6,19 +26,20 @@
     border: none;
 }
 
+#TexteIntro{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .presentation p {
     font-size: 20px;
-    text-align: justify;
     margin: 10px;
 }
 
 .presentation div {
     margin: 20px;
-}
-
-.presentation {
-    display: flex;
-    flex-direction: column;
 }
 
 .texteBiographie {
@@ -30,13 +51,6 @@
 
 .competenceGeneral {
     display: flex;
-}
-
-.competence {
-    flex-direction: row;
-    background-color: #32CD32;
-    /*transition: width 1s ease-in-out;*/
-    width: 10px;
 }
 
 .texteComp {
@@ -51,44 +65,65 @@
 /*competence*/
 details[open] #java {
     width: 900px;
-    border-radius: 10px;
 }
 
 details[open] #FX {
     width: 550px;
-    border-radius: 10px;
 }
 
 details[open] #css {
     width: 650px;
-    border-radius: 10px;
 }
 
 details[open] #php {
     width: 400px;
-    border-radius: 10px;
 }
 
 details[open] #sql {
     width: 400px;
-    border-radius: 10px;
 }
 
 details[open] #c {
     width: 750px;
-    border-radius: 10px;
 }
 
 details[open] #arduino {
     width: 150px;
-    border-radius: 10px;
 }
 
 details[open] #virtualBox {
     width: 150px;
-    border-radius: 10px;
 }
 
+details[open] summary ~ * {
+    animation: open .5s ease-in-out;
+}
+
+details[close] summary ~ * {
+    animation: close .5s ease-in-out;
+}
+
+@keyframes open {
+    0% {opacity: 0; margin-left: -20px}
+    100% {opacity: 1; margin-left: 0}
+}
+
+@keyframes close {
+    0% {opacity: 1; margin-left: 0;}
+    100% {opacity: 0; margin-left: -20px}
+}
+
+.competence{
+    border-radius: 10px;
+    transition: width 0.25s 0.5s ease-in-out;
+    flex-direction: row;
+    background: rgb(54,72,159);
+    background: linear-gradient(90deg, rgba(54,72,159,0.9528186274509804) 37%, rgba(167,100,193,0.8407738095238095) 69%);
+}
+
+details:not([open]) .competence{
+    width: 0;
+}
 
 /* carroussel */
 
@@ -129,6 +164,15 @@ details[open] #virtualBox {
     text-align: center;
 }
 
+@keyframes slide {
+    50% {
+        transform: translate(-400px, 0);
+    }
+    100% {
+        transform: translate(0px, 0);
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     #carousel {
@@ -137,5 +181,24 @@ details[open] #virtualBox {
 
     .textePres {
         display: block;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+
+    #intro {
+        display: block;
+    }
+
+    #imgIntroAcceuil {
+        margin-top: 20px;
+    }
+
+    #TexteIntro{
+        text-align: center;
+    }
+
+    #TexteIntro p{
+        padding: 10px;
     }
 }
