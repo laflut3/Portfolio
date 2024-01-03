@@ -171,8 +171,7 @@ details:not([open]) .competence{
 }
 
 @media screen and (max-width: 1060px) {
-
-    .intro {
+    .text-vide {
         display: block;
     }
 
