@@ -125,6 +125,18 @@ summary:before {
     transition: .25s transform ease;
 }
 
+.text-vide{
+    display: flex;
+    flex-grow: 2;
+    color: white;
+    background-color: #1E272D;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.titre{
+    color: white;
+}
 /* -------------------- *!* Projet de semestre *!* -------------------- */
 
 @media screen and (max-width: 480px) {

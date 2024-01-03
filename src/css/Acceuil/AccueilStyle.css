@@ -1,18 +1,6 @@
 /* ------------------------ *!* Acceuil *!* ------------------------ */
 
-#intro{
-    display: flex;
-    flex-direction: row;
-    flex-grow: 2;
-    color: white;
-    background-color: #1E272D;
-    border-radius: 20px;
-    padding: 10px;
-}
 
-.titre{
-    color: white;
-}
 
 #imgIntroAcceuil {
     flex: 1;
@@ -184,7 +172,7 @@ details:not([open]) .competence{
 
 @media screen and (max-width: 1060px) {
 
-    #intro {
+    .intro {
         display: block;
     }
 
