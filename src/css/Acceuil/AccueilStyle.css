@@ -18,24 +18,17 @@
     justify-content: space-evenly;
 }
 
-.presentation p {
-    font-size: 20px;
-    margin: 10px;
-}
-
-.presentation div {
-    margin: 20px;
-}
-
 .texteBiographie {
     color: #f0f0f0;
-    padding: 10px;
+    padding: 20px;
+    margin:0;
 }
 
 /* competence */
 
 .competenceGeneral {
     display: flex;
+    padding: 20px;
 }
 
 .texteComp {
@@ -185,8 +178,12 @@ details:not([open]) .competence{
     }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1100px) {
     .competence{
         display:none;
+    }
+
+    .competenceGeneral{
+        text-align: center;
     }
 }

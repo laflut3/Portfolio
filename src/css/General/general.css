@@ -19,11 +19,8 @@ html {
 }
 
 main {
-    min-height: 100vh;
-}
-
-main {
     width: 100%;
+    min-height: 100vh;
     max-width: 1600px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -93,6 +90,8 @@ p > em {
     border-radius: 20px;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
+    font-size: 20px;
+    margin: 20px;
 }
 
 .boiteDepliante[open] {
@@ -132,10 +131,23 @@ summary:before {
     background-color: #1E272D;
     border-radius: 20px;
     padding: 10px;
+    font-size: 20px;
+}
+
+.text-vide p{
+    padding: 5px;
 }
 
 .titre{
     color: white;
+}
+
+.textResp{
+    display: none;
+}
+
+.specification{
+    color: #C0C0C0;
 }
 /* -------------------- *!* Projet de semestre *!* -------------------- */
 
@@ -146,5 +158,16 @@ summary:before {
 
     h2 {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .textResp {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textNonResp {
+        display: none;
     }
 }

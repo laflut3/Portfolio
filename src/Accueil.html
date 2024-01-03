@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/General/navStyle.css">
     <link rel="stylesheet" type="text/css" href="css/General/footerStyle.css">
     <link rel="stylesheet" type="text/css" href="css/Acceuil/AccueilStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/test.css">
 </head>
 
 <body>
@@ -33,11 +34,9 @@
             <div class="sousmenu">
                 <div class="but">
                     <ul>
-
                         <li>
                             <a href="Projet.html#BUT">Universitaire</a>
                         </li>
-
                         <ul class="sousmenu2">
                             <li>
                                 <a href="semestre1.html">Semestre 1</a>
@@ -75,55 +74,61 @@
         </div>
         <div id="menu2">
             <div class="menu-item">
-                <div class="boiteDeplianteNav">
+                <div class="boiteDepliante">
                     <details>
                         <summary>Accueil</summary>
-                        <ul>
-                            <li>
-                                <a href="Introduction">Introduction</a>
-                            </li>
-                            <li>
-                                <a href="biographie">Biographie</a>
-                            </li>
-                        </ul>
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <a href="#Introduction">Introduction</a>
+                                </li>
+                                <li>
+                                    <a href="#biographie">Biographie</a>
+                                </li>
+                            </ul>
+                        </div>
                     </details>
                 </div>
             </div>
             <div class="menu-item">
-                <div class="boiteDeplianteNav">
+                <div class="boiteDepliante">
                     <details>
                         <summary>Projet</summary>
-                        <div class="but">
-                            <ul>
-                                <li>
-                                    <a href="Projet.html">Introduction</a>
-                                </li>
-                                <li>
-                                    <a href="Projet.html#BUT">Universitaire</a>
-                                </li>
+                        <div class="content">
+                            <div class="but">
+                                <ul>
+                                    <li>
+                                        <a href="Projet.html">Introduction</a>
+                                    </li>
+                                    <li>
+                                        <a href="Projet.html#BUT">Universitaire</a>
+                                    </li>
 
-                                <li>
-                                    <div class="boiteDeplianteNav">
-                                        <details>
-                                            <summary>projet Universitaire</summary>
-                                            <ul>
-                                                <li>
-                                                    <a href="semestre1.html">Semestre 1</a>
-                                                </li>
-                                                <li>
-                                                    <a href="semestre2.html">Semestre 2</a>
-                                                </li>
-                                                <li>
-                                                    <a href="semestre3.html">Semestre 3</a>
-                                                </li>
-                                                <li>
-                                                    <a href="semestre4.html">Semestre 4</a>
-                                                </li>
-                                            </ul>
-                                        </details>
-                                    </div>
-                                </li>
-                            </ul>
+                                    <li>
+                                        <div class="boiteDepliante">
+                                            <details>
+                                                <summary>projet Universitaire</summary>
+                                                <div class="content">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="semestre1.html">Semestre 1</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="semestre2.html">Semestre 2</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="semestre3.html">Semestre 3</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="semestre4.html">Semestre 4</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </details>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <ul>
                             <li>
@@ -134,18 +139,22 @@
                 </div>
             </div>
             <div class="menu-item">
-                <div class="boiteDeplianteNav">
+                <div class="boiteDepliante">
                     <details>
                         <summary>CV</summary>
-                        <a href="CV.html">Mon CV</a>
+                        <div class="content">
+                            <a href="CV.html">Mon CV</a>
+                        </div>
                     </details>
                 </div>
             </div>
             <div class="menu-item">
-                <div class="boiteDeplianteNav">
+                <div class="boiteDepliante">
                     <details>
                         <summary>Contact</summary>
-                        <a href="Contact.html">Contact</a>
+                        <div class="content">
+                            <a href="Contact.html">Contact</a>
+                        </div>
                     </details>
                 </div>
             </div>
@@ -157,26 +166,41 @@
     <article>
         <h2 class="titre">Introduction</h2>
         <div class="text-vide">
-            <div class="presentation" id="TexteIntro">
-                <p>
-                    Bienvenue sur mon Portfolio, un espace dédié à la présentation de mon parcours professionnel et
-                    académique. En tant qu'étudiant en deuxième année de Bachelor Universitaire de Technologie (BUT) en
-                    informatique, ce site constitue la vitrine de tous mes projets, autant scolaires que personnels.
-                </p>
-                <p>
-                    Vous découvrirez les réalisations auxquelles j'ai contribué, mes compétences techniques, ainsi que
-                    ma
-                    passion pour l'informatique et le développement de solutions innovantes. Mon Portfolio est le reflet
-                    de
-                    mon engagement envers l'apprentissage continu et l'amélioration constante.
-                </p>
-                <p>
-                    Je vous invite à explorer les différentes sections de ce site pour en apprendre davantage sur mon
-                    parcours et mes réalisations.
-                </p>
-                <p>
-                    Merci de votre visite, et je vous souhaite une agréable découverte de mon Portfolio.
-                </p>
+            <div id="TexteIntro">
+                <div class="textNonResp">
+                    <p>
+                        Bienvenue sur mon Portfolio, un espace dédié à la présentation de mon parcours professionnel et
+                        académique. En tant que future professionnel dans le domaine de l'informatique, ce site
+                        constitue la vitrine de tous mes projets, autant scolaires que personnels.
+                    </p>
+                    <p>
+                        Vous découvrirez les réalisations auxquelles j'ai contribué, mes compétences techniques, ainsi
+                        que ma passion pour l'informatique et le développement de solutions innovantes. Mon Portfolio
+                        est le reflet de mon engagement envers l'apprentissage continu et l'amélioration constante.
+                    </p>
+                    <p>
+                        Je vous invite à explorer les différentes pages de ce site pour en apprendre d'avantage sur
+                        mon parcours et mes réalisations.
+                    </p>
+                    <p>
+                        Merci de votre visite, et je vous souhaite une agréable découverte de mon Portfolio.
+                    </p>
+                </div>
+                <div class="textResp">
+                    <p>
+                        Bienvenue sur mon Portfolio, un espace dédié à la présentation de mon parcours professionnel et
+                        académique.
+                    </p>
+                    <p>
+                        Je vous invite à explorer les différentes sections de ce site
+                    </p>
+                    <p>
+                        Merci de votre visite, et je vous souhaite une agréable découverte de mon Portfolio.
+                    </p>
+                    <p class="specification">
+                        Ce texte est raccourci pour la versions téléphone
+                    </p>
+                </div>
             </div>
             <div id="imgIntroAcceuil">
                 <div class="img">
@@ -186,148 +210,153 @@
         </div>
 
         <h2 id="biographie" class="titre">Ma Biographie</h2>
-        <div class="presentation">
-            <div class="boiteDepliante">
-                <details>
-                    <summary>Qui suis-je ?</summary>
-                    <div class="content">
+        <div class="boiteDepliante">
+            <details>
+                <summary>Qui suis-je ?</summary>
+                <div class="content">
+                    <div class="textNonResp">
                         <p class="texteBiographie">
                             Bonjour, je me nomme Léo Torres.
                         </p>
                         <p class="texteBiographie">
                             Je suis né dans la magnifique région du Languedoc-Roussillon, plus précisément à
-                            Montpellier,
-                            une ville riche en histoire et en culture. Mon parcours éducatif est marqué par un
-                            engagement
-                            constant pour l'excellence, dans tout ce que j'entreprend.
+                            Montpellier, une ville riche en histoire et en culture. Mon parcours éducatif est
+                            marqué par un engagement constant pour l'excellence, dans tout ce que j'entreprend.
                         </p>
                     </div>
-                </details>
-            </div>
-
-            <div class="boiteDepliante">
-                <details>
-                    <summary>Présentation Parcours</summary>
-                    <div class="content">
+                    <div class="textResp">
+                        <p class="texteBiographie">
+                            Bonjour, je me nomme Léo Torres.
+                        </p>
+                        <p class="texteBiographie">
+                            Je suis né à Montpellier dans le languedoc Roussillon.
+                        </p>
+                        <p class="specification">
+                            Ce texte est raccourci pour la versions téléphone
+                        </p>
+                    </div>
+                </div>
+            </details>
+        </div>
+        <div class="boiteDepliante">
+            <details>
+                <summary>Présentation Parcours</summary>
+                <div class="content">
+                    <div class="textNonResp">
                         <p class="texteBiographie">
                             Pour commencer j'ai suivi mes études au lycée Jean Jaurès pour mon année de seconde.
+                            j’y est choisi l’option BIA que j’ai validée. Mon premier objectif était d’avoir des
+                            connaissances en aéronautique.
+                        </p>
+                        <p class="texteBiographie">
                             J'ai ensuite choisi de me diriger vers une filière plus adaptée à mon
-                            profil... la STI2D (Science Technologique de l'Industrie et du Développement Durable), au
-                            sein
-                            du lycée Jean Mermoz à Montpellier. Cette expérience a été enrichissante, me permettant
-                            d'explorer les domaines de la technologie et du développement durable, qui m'ont passionné.
+                            profil... la STI2D (Science Technologique de l'Industrie et du Développement Durable),
+                            au sein du lycée Jean Mermoz à Montpellier. Cette expérience a été enrichissante,
+                            me permettant d'explorer les domaines de la technologie et du développement durable, qui
+                            m'ont passionné.
                         </p>
                         <p class="texteBiographie">
                             J'ai décroché mon Bac technologique avec mention; ce qui a renforcé ma
                             détermination à persévérer dans le domaine de l'informatique, un domaine en constante
                             évolution.
-                            Actuellement en 2de année de Bachelor Universitaire de Technologie (BUT) en
-                            informatique, je continue d'acquérir des compétences techniques et de développer ma passion.
                         </p>
                         <p class="texteBiographie">
-                            A la suite de mes expériences de première année de BUT, mon choix de
-                            parcours s'est porté sur DACS (Déploiement d'Applications communicantes et sécurisées).
-                        </p>
-                        <p class="texteBiographie">
-                            Ce dernier me permet d’acquérir les connaissances nécessaires afin de travailler dans le
-                            domaine
-                            de la cybersécurité.
-                        </p>
-                        <p class="texteBiographie">
-                            Dès mon entrée au lycée, j’ai choisi l’option BIA que j’ai validée. Mon premier objectif
-                            était
-                            d’avoir des connaissances en aéronautique afin de me spécialiser dans la programmation de
-                            drones
-                            et leur sécurisation informatique en lien avec l’armée de l’air.
-                        </p>
-                        <p class="texteBiographie">
-                            Par la suite, ma première année de BUT m’a permis de m’ouvrir à d’autres domaines et ma
-                            curiosité m'a poussé à développer de nouvelles compétences telles que la programmation bas
-                            niveau.
+                            Pour me permettre de faire grandir mon arbre de compétence dans le domaine qui me
+                            passionne je suis aller en première année de BUT en informatique.
                         </p>
                         <p class="texteBiographie">
                             Dans le cadre de mon projet professionnel personnalisé (PPP), j’ai
-                            réalisé l’interview d’un hacker éthique (pentester). Toutes les facettes de son métier me
-                            plaisent et ont conforté mon choix déjà bien défini.
+                            réalisé l’interview d’un hacker éthique (pentester). Toutes les facettes de son métier
+                            me plaisent et ont conforté mon choix déjà bien défini.
+                        </p>
+                        <p class="texteBiographie">
+                            Actuellement en 2de année de Bachelor Universitaire de Technologie (BUT) en
+                            informatique, mon choix de parcours s'est porté sur DACS (Déploiement d'Applications
+                            communicantes et sécurisées). Ce dernier me permet d’acquérir les connaissances
+                            nécessaires afin de travailler dans le domaine de la cybersécurité.
                         </p>
                         <p class="texteBiographie">
                             Ma pugnacité, ma rigueur et ma curiosité seront mes atouts pour réussir dans ce domaine.
                         </p>
                     </div>
-                </details>
-            </div>
+                    <div class="textResp">
+                        <p class="texteBiographie">
+                            Pour commencer j'ai suivi mes études au lycée Jean Jaurès. j'y est validée mon BIA.
+                        </p>
+                        <p class="texteBiographie">
+                            Enssuite je me suis diriger vers la STI2D, au sein du lycée Jean Mermoz
+                            à Montpellier. J'y est décroché mon Bac technologique avec mention.
+                        </p>
+                        <p class="texteBiographie">
+                            Pour faire grandir mon arbre de compétence je suis aller en BUT en informatique.
+                        </p>
+                        <p class="texteBiographie">
+                            Actuellement en 2de année de BUT en informatique, mon choix de parcours s'est porté
+                            sur DACS.
+                        </p>
+                        <p class="specification">
+                            Ce texte est raccourci pour les verssion téléphone
+                        </p>
+                    </div>
+                </div>
+            </details>
+        </div>
 
-            <div class="boiteDepliante">
-                <details>
-                    <summary>Competence en programmation</summary>
-                    <div class="content">
-                        <div class="competenceGeneral">
-                            <div class="texteComp">
-                                <p> java </p>
-                            </div>
-                            <div class="competence" id="java"></div>
+        <div class="boiteDepliante">
+            <details>
+                <summary>Competence en programmation</summary>
+                <div class="content">
+                    <div class="container">
+                        <div class="col">
+                            <h2 class="titulo">Programación</h2>
+                            <ul class="skill">
+                                <li><span class="blueline html"></span><em>HTML</em></li>
+                                <li><span class="blueline css"></span><em>CSS</em></li>
+                                <li><span class="blueline php"></span><em>PHP</em></li>
+                                <li><span class="blueline javascript"></span><em>Javascript</em></li>
+                                <li><span class="blueline jquery"></span><em>jQuery</em></li>
+                            </ul>
                         </div>
-                        <div class="competenceGeneral">
-                            <div class="texteComp">
-                                <p> javaFX </p>
-                            </div>
-                            <div class="competence" id="FX"></div>
+                        <div class="col">
+                            <h2 class="plataformas titulo">Plataformas</h2>
+                            <ul class="skill">
+                                <li><span class="greenline wordpress"></span><em>Wordpress</em></li>
+                                <li><span class="greenline prestashop"></span><em>Prestashop</em></li>
+                                <li><span class="greenline joomla"></span><em>Joomla</em></li>
+                                <li><span class="greenline blogger"></span><em>Blogger</em></li>
+                                <li><span class="greenline tridion"></span><em>Tridion</em></li>
+                            </ul>
                         </div>
-                        <div class="competenceGeneral">
-                            <div class="texteComp">
-                                <p> html / css </p>
-                            </div>
-                            <div class="competence" id="css"></div>
-                        </div>
-                        <div class="competenceGeneral">
-                            <div class="texteComp">
-                                <p> php </p>
-                            </div>
-                            <div class="competence" id="php"></div>
-                        </div>
-                        <div class="competenceGeneral">
-                            <div class="texteComp">
-                                <p> sql / pl-sql </p>
-                            </div>
-                            <div class="competence" id="sql"></div>
-                        </div>
-                        <div class="competenceGeneral">
-                            <div class="texteComp">
-                                <p> c </p>
-                            </div>
-                            <div class="competence" id="c"></div>
-                        </div>
-                        <div class="competenceGeneral">
-                            <div class="texteComp">
-                                <p> c++ arduino </p>
-                            </div>
-                            <div class="competence" id="arduino"></div>
-                        </div>
-                        <div class="competenceGeneral">
-                            <div class="texteComp">
-                                <p> virtualBox </p>
-                            </div>
-                            <div class="competence" id="virtualBox"></div>
+                        <div class="col">
+                            <h2 class="programas titulo">Programas</h2>
+                            <ul class="skill">
+                                <li><span class="redline dreamweaver"></span><em>Dreamweaver</em></li>
+                                <li><span class="redline illustrator"></span><em>Illustrator</em></li>
+                                <li><span class="redline photoshop"></span><em>Photoshop</em></li>
+                                <li><span class="redline premiere"></span><em>Premiere</em></li>
+                                <li><span class="redline flash"></span><em>Flash</em></li>
+                            </ul>
                         </div>
                     </div>
-                </details>
-            </div>
+                </div>
+            </details>
+        </div>
 
-            <div class="boiteDepliante">
-                <details>
-                    <summary>Mes diplomes</summary>
-                    <div id="diaporama-container" class="content">
-                        <div class="diaporama">
-                            <img src="../ressource/image/BAC.png" alt="BAC" id="BAC">
-                            <img src="../ressource/image/BIA.png" alt="BIA" id="BIA">
-                        </div>
+        <div class="boiteDepliante">
+            <details>
+                <summary>Mes diplomes</summary>
+                <div id="diaporama-container" class="content">
+                    <div class="diaporama">
+                        <img src="../ressource/image/BAC.png" alt="BAC" id="BAC">
+                        <img src="../ressource/image/BIA.png" alt="BIA" id="BIA">
                     </div>
-                    <div id="diplome" class="content">
-                        <img src="../ressource/image/BAC.png" alt="BAC">
-                        <img src="../ressource/image/BIA.png" alt="BIA">
-                    </div>
-                </details>
-            </div>
+                </div>
+                <div id="diplome" class="content">
+                    <img src="../ressource/image/BAC.png" alt="BAC">
+                    <img src="../ressource/image/BIA.png" alt="BIA">
+                </div>
+            </details>
+        </div>
         </div>
     </article>
 </main>
