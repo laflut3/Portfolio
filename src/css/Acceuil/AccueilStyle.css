@@ -95,24 +95,6 @@ details[open] #virtualBox {
     width: 150px;
 }
 
-details[open] summary ~ * {
-    animation: open .5s ease-in-out;
-}
-
-details[close] summary ~ * {
-    animation: close .5s ease-in-out;
-}
-
-@keyframes open {
-    0% {opacity: 0; margin-left: -20px}
-    100% {opacity: 1; margin-left: 0}
-}
-
-@keyframes close {
-    0% {opacity: 1; margin-left: 0;}
-    100% {opacity: 0; margin-left: -20px}
-}
-
 .competence{
     border-radius: 10px;
     transition: width 0.25s 0.5s ease-in-out;
@@ -164,6 +146,15 @@ details:not([open]) .competence{
     text-align: center;
 }
 
+#diplome{
+    display: none;
+}
+
+#diplome img{
+    padding: 10px;
+    border: none;
+}
+
 @keyframes slide {
     50% {
         transform: translate(-400px, 0);
@@ -175,12 +166,19 @@ details:not([open]) .competence{
 
 @media screen and (max-width: 768px) {
 
-    #carousel {
-        display: block;
-    }
-
     .textePres {
         display: block;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    #diaporama-container{
+        display: none;
+    }
+
+    #diplome{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -200,5 +198,11 @@ details:not([open]) .competence{
 
     #TexteIntro p{
         padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .competence{
+        display:none;
     }
 }

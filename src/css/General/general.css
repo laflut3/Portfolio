@@ -62,7 +62,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     border: none;
-    background-image: url('ressource/image/backgroud.jpg'); /* Remplacez 'votre_image.jpg' par le chemin de votre image */
+    background-image: url('ressource/image/background.jpg'); /* Remplacez 'votre_image.jpg' par le chemin de votre image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -104,6 +104,25 @@ p > em {
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
+}
+
+summary {
+    outline: none;
+    position: relative;
+    cursor: pointer;
+}
+
+details[open] > summary:before {
+    transform: rotate(90deg);
+}
+summary:before {
+    content: '';
+    position: absolute;
+    top: 1.3rem;
+    left: 1rem;
+    transform: rotate(0);
+    transform-origin: .2rem 50%;
+    transition: .25s transform ease;
 }
 
 /* -------------------- *!* Projet de semestre *!* -------------------- */
