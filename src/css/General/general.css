@@ -40,6 +40,10 @@ h2 {
     margin-top: 30px;
 }
 
+h3{
+    margin: 0;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -132,10 +136,6 @@ summary:before {
     border-radius: 20px;
     padding: 10px;
     font-size: 20px;
-}
-
-.text-vide p{
-    padding: 5px;
 }
 
 .titre{
