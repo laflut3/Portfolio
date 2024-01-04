@@ -1,0 +1,198 @@
+* {margin: 0; padding: 0; outline: none;}
+
+details h2 {
+    font-size: 2.7em;
+    font-weight: normal;
+    padding: 10px 0 16px 0;
+    margin: 0 0 30px;
+    text-align:center;
+    color:#2187e7;
+    text-shadow: 1px 1px 5px #000, 0 0 10px #2187e7, 0 0 20px #2187e7;
+    background:#000;
+    border-radius:2px;
+    border: 1px solid #2187e7;
+    box-shadow: 0 0 50px -8px #2187e7;
+}
+h2.logiciel {
+    border: 1px solid #9ACD32;
+    box-shadow: 0 0 50px -8px #9ACD32;
+    color: #9ACD32;
+    text-shadow: 1px 1px 5px #000, 0 0 10px #9ACD32, 0 0 20px #9ACD32;
+}
+
+h2.humaine {
+    border: 1px solid #FF4500;
+    box-shadow: 0 0 50px -8px #FF4500;
+    color: #FF4500;
+    text-shadow: 1px 1px 5px #000, 0 0 10px #FF4500, 0 0 20px #FF4500;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.col {
+    width: 23%;
+    margin: 0 5%;
+    position: relative;
+    float: left;
+    font-size: 12px;
+    line-height: 2em;
+    padding: 5% 0;
+}
+/*.col { width:101%; }*/
+.skill {
+    list-style:none;
+    padding-top:30px;
+}
+
+.skill li {
+    margin-bottom:70px;
+    background:#030303;
+    height:6px;
+    border-radius:3px;
+    border-left:1px solid #111;
+    border-top:1px solid #111;
+    border-right:1px solid #333;
+    border-bottom:1px solid #333;
+}
+
+.skill li em {
+    position:relative;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+    color:#dedede;
+    top:-28px;
+}
+
+.blueline {
+    height: 3px;
+    margin: 2px 0;
+    background: #2187e7;
+    position: absolute;
+    box-shadow: 0 0 10px 1px rgba(0,198,255,0.6);
+}
+.greenline {
+    height: 3px;
+    margin: 2px 0;
+    background: #9ACD32;
+    position: absolute;
+    box-shadow: 0 0 10px 1px rgba(173, 255, 47,0.4);
+}
+.redline {
+    height: 3px;
+    margin: 2px 0;
+    background: #FF4500;
+    position: absolute;
+    box-shadow: 0 0 10px 1px rgba(255, 69, 0,0.4);
+}
+
+.titreComp      { opacity:1;  animation:titreComp 5s ease-out;     }
+
+/*prog*/
+.git         { width:85%;  animation:git 3s ease-out;     }
+.java        { width:85%;  animation:java 3s ease-out;     }
+.javafx      { width:45%;  animation:javafx 3s ease-out;     }
+.c_simp      { width:70%;  animation:c_simp 3s ease-out;     }
+.cArduino    { width:25%;  animation:cArduino 3s ease-out;     }
+.sql         { width:55%;  animation:sql 3s ease-out;     }
+.plsql       { width:35%;  animation:plsql 3s ease-out;     }
+.html        { width:75%;  animation:html 3s ease-out;       }
+.css         { width:65%;  animation:css 3s ease-out;        }
+.php         { width:50%;  animation:php 3s ease-out;        }
+.javascript  { width:10%;  animation:javascript 3s ease-out; }
+
+/*logiciel*/
+.Oracle      { width:70%;  animation:Oracle 3s ease-out;  }
+.PhpMyAdmin  { width:65%;  animation:PhpMyAdmin 3s ease-out;  }
+.DBeaver     { width:30%;  animation:DBeaver 3s ease-out;  }
+.Capcut      { width:55%;  animation:Capcut 3s ease-out;  }
+.Canva       { width:80%;  animation:Canva 3s ease-out; }
+.Word        { width:75%;  animation:Word 3s ease-out;     }
+.Powerpoint  { width:70%;  animation:Powerpoint 3s ease-out;    }
+.Exel        { width:30%;  animation:Exel 3s ease-out;     }
+.Zotero      { width:60%;  animation:Zotero 3s ease-out;     }
+
+/*?*/
+.Bienveillance  { width:90%;  animation:Bienveillance 3s ease-out;     }
+.Rigueur        { width:85%;  animation:Rigueur 3s ease-out;     }
+.Determine      { width:100%;  animation:Determine 3s ease-out;     }
+.Curieux        { width:95%;  animation:Curieux 3s ease-out;     }
+.Autonome       { width:80%;  animation:Autonome 3s ease-out;     }
+.Organise       { width:60%;  animation:Organise 3s ease-out;     }
+.Ponctuel       { width:100%;  animation:Ponctuel 3s ease-out;     }
+.Sociable       { width:100%;  animation:Sociable 3s ease-out;     }
+.Calme          { width:75%;  animation:Calme 3s ease-out;     }
+
+@keyframes titulo      { 0% { opacity:0; } 100% { opacity:1; }  }
+
+/*prog*/
+@keyframes git         { 0% { width:0; } 100% { width:85%; }  }
+@keyframes java        { 0% { width:0; } 100% { width:85%; }  }
+@keyframes javafx      { 0% { width:0; } 100% { width:45%; }  }
+@keyframes c_simp      { 0% { width:0; } 100% { width:70%; }  }
+@keyframes cArduino    { 0% { width:0; } 100% { width:25%; }  }
+@keyframes sql         { 0% { width:0; } 100% { width:55%; }  }
+@keyframes plsql       { 0% { width:0; } 100% { width:35%; }  }
+@keyframes html        { 0% { width:0; } 100% { width:75%; }  }
+@keyframes css         { 0% { width:0; } 100% { width:65%; }  }
+@keyframes php         { 0% { width:0; } 100% { width:50%; }  }
+@keyframes javascript  { 0% { width:0; } 100% { width:10%; }  }
+
+/*logiciel*/
+@keyframes Oracle      { 0% { width:0; } 100% { width:70%; }  }
+@keyframes PhpMyAdmin  { 0% { width:0; } 100% { width:65%; }  }
+@keyframes DBeaver     { 0% { width:0; } 100% { width:30%; }  }
+@keyframes Capcut      { 0% { width:0; } 100% { width:55%; }  }
+@keyframes Canva       { 0% { width:0; } 100% { width:80%; }  }
+@keyframes Word        { 0% { width:0; } 100% { width:75%; }  }
+@keyframes Powerpoint  { 0% { width:0; } 100% { width:70%; }  }
+@keyframes Exel        { 0% { width:0; } 100% { width:30%; }  }
+@keyframes Zotero      { 0% { width:0; } 100% { width:60%; }  }
+
+/*?*/
+@keyframes Bienveillance { 0% { width:0; } 100% { width:90%; }  }
+@keyframes Rigueur       { 0% { width:0; } 100% { width:85%; }  }
+@keyframes Determine     { 0% { width:0; } 100% { width:100%; }  }
+@keyframes Curieux       { 0% { width:0; } 100% { width:95%; }  }
+@keyframes Autonome      { 0% { width:0; } 100% { width:80%; }  }
+@keyframes Organise      { 0% { width:0; } 100% { width:60%; }  }
+@keyframes Ponctuel      { 0% { width:0; } 100% { width:100%; }  }
+@keyframes Sociable      { 0% { width:0; } 100% { width:100%; }  }
+@keyframes Calme         { 0% { width:0; } 100% { width:75%; }  }
+
+
+/*media queries*/
+@media (max-width: 1200px){
+    h2 {font-size:2.2em;}
+}
+
+@media (max-width: 980px){
+    h2 {font-size:1.8em;}
+}
+
+@media (max-width: 767px){
+    h2 {font-size:1.4em;}
+}
+
+@media (max-width: 580px){
+    h2 {font-size:1.1em; padding:10px 0;}
+}
+
+@media (max-width: 1285px){
+    h2 {
+        font-size:2.2em; padding: 10px 0 15px 0;
+    }
+
+    .col {
+        width: 90%;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+}

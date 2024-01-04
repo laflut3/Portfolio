@@ -6,6 +6,10 @@ nav {
     flex-wrap: wrap;
 }
 
+ul{
+    list-style-type: none;
+}
+
 /* nav bar */
 
 .menu-item {
@@ -60,22 +64,6 @@ nav {
     border-bottom-right-radius: 20px;
 }
 
-.boiteDeplianteNav summary {
-    color: #f0f0f0;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.boiteDeplianteNav {
-    display: block;
-    background-color: #333333;
-    border-radius: 20px;
-    margin: 0 40px 10px 30px;
-    padding: 5px 0 5px 20px;
-    text-align: left;
-}
-
 .no-scroll {
     overflow: hidden;
 }
@@ -104,7 +92,7 @@ nav {
     z-index: 2;
 
     span, span:before, span:after {
-        background: black;
+        background: white;
         display: block;
         height: 2px;
         opacity: 1;
