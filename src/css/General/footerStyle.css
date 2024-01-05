@@ -15,3 +15,9 @@ footer {
     border: none;
     padding: 10px;
 }
+
+.reseau:hover{
+    height: 42px;
+    width: 42px;
+
+}
