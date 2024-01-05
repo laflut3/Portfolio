@@ -47,3 +47,10 @@ a > .logo {
 .text-vide{
     flex-direction: column;
 }
+
+@media (max-width: 625px){
+    .THM {
+        width: 280px;
+        height: 198px;
+    }
+}
