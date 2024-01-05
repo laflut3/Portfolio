@@ -1,20 +1,45 @@
-.contact-info {
-    text-align: left;
-}
-
-#contact{
-    background-color: #1C3647;
+#contact {
+    background: linear-gradient(135deg, #1C3647, #333333);
     border-radius: 30px;
-    padding: 20px;
-}
-
-#info{
-    border: solid black 10px;
-    border-radius: 30px;
-    padding: 10px;
-}
-
-#contact p,h1{
+    padding: 40px;
     color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#info {
+    border: solid 5px #1C3647;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#info p {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contact:hover,
+#info:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    #info {
+        border-width: 3px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
