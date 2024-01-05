@@ -9,6 +9,8 @@ html {
     background-image: url("../../../ressource/image/background.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: repeat; /* Répétition de l'image */
+    background-attachment: fixed;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
