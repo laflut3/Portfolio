@@ -91,7 +91,11 @@ h2.humaine {
     box-shadow: 0 0 10px 1px rgba(255, 69, 0,0.4);
 }
 
-.titreComp      { opacity:1;  animation:titreComp 5s ease-out;     }
+.titreComp      {
+    opacity:1;
+    animation:titreComp 5s ease-out;
+    padding: 20px;
+}
 
 /*prog*/
 .git         { width:85%;  animation:git 3s ease-out;     }
@@ -167,6 +171,20 @@ h2.humaine {
 
 
 /*media queries*/
+@media (max-width: 1285px){
+    h2 {
+        font-size:2.2em; padding: 10px 0 15px 0;
+    }
+
+    .col {
+        width: 90%;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 1200px){
     h2 {font-size:2.2em;}
 }
@@ -180,19 +198,17 @@ h2.humaine {
 }
 
 @media (max-width: 580px){
-    h2 {font-size:1.1em; padding:10px 0;}
+    h2 {font-size:1em; padding:10px 0;}
 }
 
-@media (max-width: 1285px){
+@media (max-width: 460px){
     h2 {
-        font-size:2.2em; padding: 10px 0 15px 0;
+        font-size:0.6em;
+        padding:10px 0;
     }
 
-    .col {
-        width: 90%;
-    }
-
-    .container{
-        flex-direction: column;
+    .titreComp{
+        font-size:1.8em;
+        padding: 10px;
     }
 }
