@@ -226,6 +226,10 @@ ul{
     width: 0;
 }
 
+& .close{
+    position: fixed;
+}
+
 /*--------------------------------------------------*/
 
 @media screen and (max-width: 768px) {
