@@ -111,6 +111,7 @@ h2.humaine {
 .javascript  { width:10%;  animation:javascript 3s ease-out; }
 
 /*logiciel*/
+.Scrum       { width:65%;  animation:Scrum 3s ease-out;  }
 .Oracle      { width:70%;  animation:Oracle 3s ease-out;  }
 .PhpMyAdmin  { width:65%;  animation:PhpMyAdmin 3s ease-out;  }
 .DBeaver     { width:30%;  animation:DBeaver 3s ease-out;  }
@@ -148,6 +149,7 @@ h2.humaine {
 @keyframes javascript  { 0% { width:0; } 100% { width:10%; }  }
 
 /*logiciel*/
+@keyframes Scrum       { 0% { width:0; } 100% { width:65%; }  }
 @keyframes Oracle      { 0% { width:0; } 100% { width:70%; }  }
 @keyframes PhpMyAdmin  { 0% { width:0; } 100% { width:65%; }  }
 @keyframes DBeaver     { 0% { width:0; } 100% { width:30%; }  }
