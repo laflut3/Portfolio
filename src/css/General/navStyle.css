@@ -122,6 +122,8 @@ ul{
     }
 
     &.close {
+        position: fixed;
+
         span:before {
             top: 0;
             transform: rotate(90deg);
@@ -224,10 +226,6 @@ ul{
     transform: rotate(90deg);
     opacity: 0;
     width: 0;
-}
-
-& .close{
-    position: fixed;
 }
 
 /*--------------------------------------------------*/

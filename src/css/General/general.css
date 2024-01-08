@@ -131,6 +131,7 @@ summary:before {
 }
 
 .text-vide{
+    text-align: center;
     display: flex;
     flex-grow: 2;
     color: white;
