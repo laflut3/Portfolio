@@ -9,7 +9,6 @@
 
 .SAEGlobal {
     display: flex;
-    flex-direction: row;
     cursor: pointer;
     padding: 20px;
 }
@@ -71,18 +70,55 @@
      pointer-events: auto;
  }
 
-
 #SAE206.ouvert, #SAE205.ouvert, #SAE204.ouvert, #SAE203.ouvert, #SAE202.ouvert, #SAE201.ouvert, #SAE106.ouvert, #SAE105.ouvert, #SAE104.ouvert, #SAE103.ouvert, #SAE102.ouvert, #SAE101.ouvert {
     width: 100%;
 }
 
-@media screen and (min-width: 1577px) {
-    .SAEGlobal > .notSelected {
-        display: none;
+.langageUse{
+    display: flex;
+
+    div{
+        margin: 10px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    p{
+        margin: 0;
+        font-size: 10px;
     }
 }
 
-@media screen and (max-width: 1577px) {
+.langage{
+    background-color: #666666;
+}
+
+.framework{
+    background-color: #215E86;
+}
+
+.logiciel{
+    background-color: #cc7289;
+}
+
+.img{
+    margin-bottom: 0;
+}
+
+.SAEGlobal > div{
+    padding: 10px;
+}
+
+.texteSAE a{
+    padding: 10px;
+    cursor:auto;
+}
+
+.SAEGlobal > .notSelected {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
     .SAEGlobal {
         flex-direction: column;
         padding: 15px;
@@ -91,5 +127,9 @@
     .SAEGlobal > div {
         width: 100%;
         margin: 10px 0;
+    }
+
+    .SAEGlobal > .notSelected {
+        display: flex;
     }
 }

@@ -1,10 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PorteFolio</title>
+    <link rel="icon" href="../../ressource/image/astronomie.png" sizes="any">
+    <link rel="stylesheet" type="text/css" href="../css/General/general.css">
+    <link rel="stylesheet" type="text/css" href="../css/General/navStyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/General/footerStyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/CV/CVStyle.css">
 </head>
 <body>
+<header>
+    <nav id="nav-primaire">
+        <div class="menu-item">
+            <a href="../Accueil.html">Accueil</a>
+            <div class="sousmenu">
+                <ul>
+                    <li>
+                        <a href="../Accueil.html#Introduction">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="../Accueil.html#biographie">Biographie</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="../Projet.html">Mes Projets</a>
+            <div class="sousmenu">
+                <div class="but">
+                    <ul>
 
+                        <li>
+                            <a href="../Projet.html#BUT">Universitaire</a>
+                        </li>
+
+                        <ul class="sousmenu2">
+                            <li>
+                                <a href="../semestre1.html">Semestre 1</a>
+                            </li>
+                            <li>
+                                <a href="../semestre2.html">Semestre 2</a>
+                            </li>
+                            <li>
+                                <a href="../semestre3.html">Semestre 3</a>
+                            </li>
+                            <li>
+                                <a href="../semestre4.html">Semestre 4</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <ul>
+                    <li>
+                        <a href="../Projet.html#personnel">Personnel</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="../CV.html">Mon CV</a>
+        </div>
+        <div class="menu-item">
+            <a href="../Contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <nav id="navBurger">
+        <div id="burger-menu">
+            <span></span>
+        </div>
+        <div id="menu2">
+            <div class="menu-item">
+                <div class="boiteDepliante">
+                    <details>
+                        <summary>Accueil</summary>
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <a href="../Accueil.html#Introduction">Introduction</a>
+                                </li>
+                                <li>
+                                    <a href="../Accueil.html#biographie">Biographie</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="boiteDepliante">
+                    <details>
+                        <summary>Projet</summary>
+                        <div class="content">
+                            <div class="but">
+                                <ul>
+                                    <li>
+                                        <a href="../Projet.html">Introduction</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Projet.html#BUT">Universitaire</a>
+                                    </li>
+
+                                    <li>
+                                        <div class="boiteDepliante">
+                                            <details>
+                                                <summary>projet Universitaire</summary>
+                                                <div class="content">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="../semestre1.html">Semestre 1</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../semestre2.html">Semestre 2</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../semestre3.html">Semestre 3</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../semestre4.html">Semestre 4</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </details>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="../Projet.html#personnel">Personnel</a>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="boiteDepliante">
+                    <details>
+                        <summary>CV</summary>
+                        <div class="content">
+                            <a href="../CV.html">Mon CV</a>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="boiteDepliante">
+                    <details>
+                        <summary>Contact</summary>
+                        <div class="content">
+                            <a href="../Contact.html">Contact</a>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+</main>
+
+<footer>
+    <p id="signature">&copy; 2023 Torres Léo - Tous droits réservés</p>
+    <div id="RS">
+        <a href="https://www.instagram.com/le0_trs/">
+            <img src="../../ressource/image/instagram.png" alt="insta" class="reseau">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100017006473298">
+            <img src="../../ressource/image/facebook.png" alt="facebook" class="reseau">
+        </a>
+        <a href="https://www.linkedin.com/in/leo-torres-804687264/">
+            <img src="../../ressource/image/linkedin.png" alt="linkedin" class="reseau">
+        </a>
+        <a href="https://github.com/laflut3">
+            <img src="../../ressource/image/github.png" alt="github" class="reseau">
+        </a>
+    </div>
+</footer>
 </body>
+<script src="../JS/Script.js"></script>
 </html>
+
