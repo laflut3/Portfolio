@@ -8,6 +8,7 @@ nav {
 
 ul{
     list-style-type: none;
+    margin:0;
 }
 
 /* nav bar */
@@ -144,6 +145,11 @@ ul{
             width: 0;
         }
     }
+}
+
+.but .boiteDepliante{
+    margin: 0;
+    padding: 10px;
 }
 
 .no-scroll #navBurger {
