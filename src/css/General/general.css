@@ -6,7 +6,7 @@ html, body, div, h1, h2, p, a, img {
 /* Styles généraux */
 
 html {
-    background-image: url("../../../ressource/image/background.jpg");
+    background-image: url("../../../ressource/image/general/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -64,7 +64,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     border: none;
-    background-image: url('ressource/image/background.jpg'); /* Remplacez 'votre_image.jpg' par le chemin de votre image */
+    background-image: url('../../../ressource/image/general/background.jpg'); /* Remplacez 'votre_image.jpg' par le chemin de votre image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
