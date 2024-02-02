@@ -98,7 +98,6 @@ h2.humaine {
 }
 
 /*prog*/
-.git         { width:85%;  animation:git 3s ease-out;     }
 .java        { width:85%;  animation:java 3s ease-out;     }
 .javafx      { width:45%;  animation:javafx 3s ease-out;     }
 .c_simp      { width:70%;  animation:c_simp 3s ease-out;     }
@@ -108,9 +107,10 @@ h2.humaine {
 .html        { width:75%;  animation:html 3s ease-out;       }
 .css         { width:65%;  animation:css 3s ease-out;        }
 .php         { width:50%;  animation:php 3s ease-out;        }
-.javascript  { width:10%;  animation:javascript 3s ease-out; }
+.javaScript  { width:40%;  animation:javaScript 3s ease-out; }
 
 /*logiciel*/
+.git         { width:85%;  animation:git 3s ease-out;     }
 .Scrum       { width:65%;  animation:Scrum 3s ease-out;  }
 .Oracle      { width:70%;  animation:Oracle 3s ease-out;  }
 .PhpMyAdmin  { width:65%;  animation:PhpMyAdmin 3s ease-out;  }
@@ -136,7 +136,6 @@ h2.humaine {
 @keyframes titulo      { 0% { opacity:0; } 100% { opacity:1; }  }
 
 /*prog*/
-@keyframes git         { 0% { width:0; } 100% { width:85%; }  }
 @keyframes java        { 0% { width:0; } 100% { width:85%; }  }
 @keyframes javafx      { 0% { width:0; } 100% { width:45%; }  }
 @keyframes c_simp      { 0% { width:0; } 100% { width:70%; }  }
@@ -146,9 +145,10 @@ h2.humaine {
 @keyframes html        { 0% { width:0; } 100% { width:75%; }  }
 @keyframes css         { 0% { width:0; } 100% { width:65%; }  }
 @keyframes php         { 0% { width:0; } 100% { width:50%; }  }
-@keyframes javascript  { 0% { width:0; } 100% { width:10%; }  }
+@keyframes javaScript  { 0% { width:0; } 100% { width:40%; }  }
 
 /*logiciel*/
+@keyframes git         { 0% { width:0; } 100% { width:85%; }  }
 @keyframes Scrum       { 0% { width:0; } 100% { width:65%; }  }
 @keyframes Oracle      { 0% { width:0; } 100% { width:70%; }  }
 @keyframes PhpMyAdmin  { 0% { width:0; } 100% { width:65%; }  }
