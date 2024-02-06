@@ -1,0 +1,16 @@
+.text-vide{
+    margin:10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+.textResp, .textNonResp {
+    text-align: center;
+}
