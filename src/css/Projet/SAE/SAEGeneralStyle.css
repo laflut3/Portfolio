@@ -8,6 +8,7 @@
 }
 
 .SAEGlobal {
+    justify-content: center;
     display: flex;
     cursor: pointer;
     padding: 20px;
@@ -16,6 +17,7 @@
 .SAEGlobal > div {
     display: flex;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     width: 16.6%;
     background-color: #333333e3;
@@ -71,12 +73,14 @@
      pointer-events: auto;
  }
 
-#SAE206.ouvert, #SAE205.ouvert, #SAE204.ouvert, #SAE203.ouvert, #SAE202.ouvert, #SAE201.ouvert, #SAE106.ouvert, #SAE105.ouvert, #SAE104.ouvert, #SAE103.ouvert, #SAE102.ouvert, #SAE101.ouvert {
+#SiteECommerce.ouvert, #SAE3B01.ouvert, #SAE206.ouvert, #SAE205.ouvert, #SAE204.ouvert, #SAE203.ouvert, #SAE202.ouvert, #SAE201.ouvert, #SAE106.ouvert, #SAE105.ouvert, #SAE104.ouvert, #SAE103.ouvert, #SAE102.ouvert, #SAE101.ouvert {
     width: 100%;
 }
 
 .langageUse{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     div{
         margin: 10px;
