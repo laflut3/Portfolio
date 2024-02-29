@@ -1,7 +1,16 @@
-.text-vide{
+.textVideSAE{
     margin:10px;
     justify-content: center;
     align-items: center;
+    width: 60%;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    color: white;
+    background-color: #1E272D;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
 }
 
 .img img {
@@ -13,4 +22,33 @@
 
 .textResp, .textNonResp {
     text-align: center;
+}
+
+.contenue {
+    display: flex;
+    flex-direction: column;
+}
+
+.textVideSAE:nth-child(even) {
+    align-self:flex-end;
+}
+
+.boiteDeVision {
+    text-align: center;
+    margin: 10px;
+}
+
+.Watch-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.Watch-link:hover {
+    background-color: #2980b9;
 }
