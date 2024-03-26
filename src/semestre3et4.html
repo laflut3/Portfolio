@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/General/footerStyle.css">
     <link rel="stylesheet" type="text/css" href="css/Projet/ProjetGeneralStyle.css">
     <link rel="stylesheet" type="text/css" href="css/Projet/SAE/SemestreGeneralStyle.css">
+    <script src="JS/Script.js"></script>
 </head>
 
 <body>
@@ -34,7 +35,6 @@
             <div class="sousmenu">
                 <div class="but">
                     <ul>
-
                         <li>
                             <a href="Projet.html#BUT">Universitaire</a>
                         </li>
@@ -47,10 +47,10 @@
                                 <a href="semestre2.html">Semestre 2</a>
                             </li>
                             <li>
-                                <a href="semestre3.html">Semestre 3</a>
+                                <a href="semestre3et4.html">Semestre 3</a>
                             </li>
                             <li>
-                                <a href="semestre4.html">Semestre 4</a>
+                                <a href="semestre3et4.html">Semestre 4</a>
                             </li>
                         </ul>
                     </ul>
@@ -119,10 +119,10 @@
                                                             <a href="semestre2.html">Semestre 2</a>
                                                         </li>
                                                         <li>
-                                                            <a href="semestre3.html">Semestre 3</a>
+                                                            <a href="semestre3et4.html">Semestre 3</a>
                                                         </li>
                                                         <li>
-                                                            <a href="semestre4.html">Semestre 4</a>
+                                                            <a href="semestre3et4.html">Semestre 4</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -164,9 +164,91 @@
     </nav>
 </header>
 <main>
-    <div class="imgPresent">
-        <div class="img">
-            <img src="../ressource/image/work%20in%20progress.png" alt="photo pas encore remplie">
+    <h1 class="titre">SEMESTRE 3</h1>
+    <div class="text-vide">
+        <p class="texteS">
+            Le semestre 3 de mon BUT informatique a eté composer de 2 projets. Le premier était une SAE (Situation
+            d'Aprentissage et d'Evaluation) qui ont etait decisif dans mon apprentissages et le devellopement de mes
+            competences. Le deuxiéme était un site web e-commerce.
+        </p>
+    </div>
+    <div class="SAEGlobal">
+        <div id="SiteECommerce" onclick="lockOpened('SiteECommerce')">
+            <div class="imgPresent">
+                <div class="img">
+                    <img src="../ressource/image/projet/semestre3/bolt.png" alt="" class="imgProjet">
+                </div>
+            </div>
+            <div class="langageUse">
+                <div class="langage">
+                    <p>PHP</p>
+                </div>
+                <div class="langage">
+                    <p>HTML</p>
+                </div>
+                <div class="langage">
+                    <p>CSS</p>
+                </div>
+                <div class="langage">
+                    <p>SQL</p>
+                </div>
+                <div class="langage">
+                    <p>PL/SQL</p>
+                </div>
+                <div class="logiciel">
+                    <p>PHPMyAdmin</p>
+                </div>
+                <div class="logiciel">
+                    <p>GIT</p>
+                </div>
+            </div>
+            <div class="texteSAE">
+                <p>
+                    Durant ce projet, nous avons dû développer Un site web e-commerce dynamique en php par groupe de.
+                    nous devions travailler sur une structure MVC (modéle vue controleur) et la sécurité du site en
+                    implémentant un systéme de cookie, de session, une base de donnée pour le site et un systeme de
+                    sécurisation des mot de passe en salage poivrage hachage.
+                </p>
+                <p>
+                    <strong>NOTE : 11/20</strong>
+                </p>
+            </div>
+        </div>
+        <div id="SAE3B01" onclick="lockOpened('SAE3B01')">
+            <div class="imgPresent">
+                <div class="img">
+                    <img src="../ressource/image/projet/semestre3/enchere.png" alt="" class="imgProjet">
+                </div>
+            </div>
+            <div class="langageUse">
+                <div class="langage">
+                    <p>Java</p>
+                </div>
+                <div class="langage">
+                    <p>FXML</p>
+                </div>
+                <div class="framework">
+                    <p>JavaFX</p>
+                </div>
+                <div class="framework">
+                    <p>JUnit</p>
+                </div>
+                <div class="framework">
+                    <p>Scrum</p>
+                </div>
+                <div class="logiciel">
+                    <p>GIT</p>
+                </div>
+                <div class="logiciel">
+                    <p>WireShark</p>
+                </div>
+            </div>
+            <div class="texteSAE">
+                <p>
+                    <strong>NOTE : 14.625/20</strong>
+                </p>
+            </div>
+            <a class="descriptionImg" href="projetsSemestre3/SAE3B01.html">SAE 1.01 en detail</a>
         </div>
     </div>
 </main>
@@ -188,5 +270,4 @@
     </div>
 </footer>
 </body>
-<script src="JS/Script.js"></script>
 </html>
