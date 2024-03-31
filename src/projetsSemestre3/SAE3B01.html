@@ -198,19 +198,17 @@
         <div class="textVideSAE2">
             <div class="texteDetail">
                 <p>
-                    Ce projet a démarer d'un fichier pdf envoyer par le client avec l'essentil du cahier des charges.
-                    A partir de ce dernier nous devions élaborer une application complète
-                </p>
-                <p>
-                    Afin de respecter les exigence fonctionnelle et non fonctionnelle nous nous sommes servit du cahier
-                    des charges pour concevoir tout les systèmes (chiffrement, signature ect ...). Les spécifications
+                    Pour respecter les exigence fonctionnelle et non fonctionnelle nous nous sommes servit du cahier des
+                    charges pour concevoir tout les systèmes (chiffrement, signature ect ...). Les spécifications
                     fonctionnelles concernais les actions visible par l'utilisateur comme la possibilité d'enchérir. Les
-                    spécifications non fonctionnelles concernais les actions invisible type comme le chiffrement ou la
-                    signature
+                    spécifications non fonctionnelles concernais les actions invisible comme le chiffrement ou la
+                    signature. Ces systeme complexe nous ont pousser a devoir créer une interface pour simplifié les
+                    interactions avec l'application et donc de devoir respecter des principes d'accecibilité et
+                    d'ergonomie
                 </p>
                 <p>
-                    Afin de respecter et appliquer des principes d'accéssibilité nous avons conçu une interface trés
-                    épurée et réspecté les point suivant :
+                    Afin de respecter et appliquer des principes d'accéssibilités nous avons du respecte les points
+                    suivant :
                 </p>
                 <ul>
                     <li>
@@ -222,16 +220,15 @@
                     </li>
                     <li>
                         <p>
-                            Les utilisateurs doivent être en mesure d'interagir avec les éléments de l'interface
-                            utilisateur. Cela implique de rendre les éléments cliquables facilement identifiables,
-                            d'offrir des alternatives pour les dispositifs de pointage, et de permettre la navigation
-                            par clavier.
+                            Ils doivent être en mesure d'interagir avec les éléments de l'interface. Cela implique de
+                            rendre les éléments cliquables facilement identifiables, d'offrir des alternatives pour les
+                            dispositifs de pointage, et de permettre la navigation par clavier.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Les utilisateurs doivent pouvoir comprendre l'information ainsi que le fonctionnement de
-                            l'interface utilisateur. Cela peut impliquer l'utilisation de langage simple et clair,
+                            Enfin ils doivent pouvoir comprendre l'information ainsi que le fonctionnement de
+                            l'interface. Cela peut impliquer l'utilisation de langage simple et clair,
                             d'organiser les informations de manière logique, et de fournir une rétroaction claire lors
                             des interactions.
                         </p>
@@ -272,20 +269,21 @@
                     </li>
                     <li>
                         <p>
-                            L'interface doit offrir des options de personnalisation et d'adaptation pour répondre aux
+                            Elle doit offrir des options de personnalisation et d'adaptation pour répondre aux
                             besoins et préférences individuels des utilisateurs.
                         </p>
                     </li>
                     <li>
                         <p>
-                            L'interface doit réduire la quantité d'effort mental nécessaire pour accomplir une tâche, en
+                            Elle doit réduire la quantité d'effort mental nécessaire pour accomplir une tâche, en
                             simplifiant les processus et en évitant les distractions inutiles.
                         </p>
                     </li>
                 </ul>
                 <p>
-                    L'adoption de bonne pratiques de programmation étaient aussi primordiale. Pour ce faire, nous avons
-                    respecter les principes de code SOLID
+                    L'adoption de bonne pratiques de programmation étaient aussi primordiale, pour que l'application
+                    soit optimisé et qu'elle puisse etre repris par n'importe quel autre dévelloppeur. Pour ce faire,
+                    nous avons respecter les principes de code SOLID qui sont les suivant :
                 </p>
                 <ul>
                     <li>
@@ -324,7 +322,8 @@
                     </li>
                 </ul>
                 <p>
-                    Pour vérifier et valider la qualité de l'application, nous avons utilisé JUnit pour faire des tests
+                    Enfin, pour vérifier et valider la qualité de l'application, nous avons utilisé JUnit pour faire des
+                    tests
                     unitaires. JUnit est un framework de test unitaire pour Java. Il nous a permis d'automatiser le
                     processus de test et d'assurer que chaque composant de notre application fonctionne correctement de
                     manière isolée. En écrivant des tests unitaires avec JUnit, nous avons pu identifier et corriger
@@ -335,6 +334,125 @@
             <div class="imgSAEDetail">
                 <div class="img">
                     <img src="../../ressource/image/projet/semestre3/SAE3B01/UE1%20AC.png" alt="main intro">
+                </div>
+            </div>
+        </div>
+        <div class="textVideSAE2">
+            <div class="texteDetail">
+                <p>
+                    Notre structures de données est adaptées au problème et utilise les Json
+                </p>
+                <p>
+                    Étant donné que le projet implique des communications réseau, la décision est prise de les
+                    normaliser en utilisant JSON*. Cette approche permet de transmettre et de traiter des communications
+                    à l'aide de chaînes de caractères, offrant une simplicité d'utilisation et une stabilité dans le
+                    temps.
+                </p>
+                <p>
+                    JSON* est utilisé pour transmettre des informations via des sockets, et l'API GSON* est utilisée
+                    pour convertir les réponses reçues en objets concrets, permettant ainsi une définition claire de la
+                    structure de chaque requête transmise via un socket.
+                </p>
+                <p>
+                    une authentification auprès de l'autorité de gestion est nécessaire pour effectuer toute
+                    action ayant un impact sur une enchère. Le service d'authentification de l'autorité utilise le
+                    chiffrement Bcrypt* pour stocker les mots de passe de manière robuste, ainsi que des JSON Web
+                    Tokens* pour faciliter et accélérer l'authentification des utilisateurs auprès du service.
+                </p>
+                <p>
+                    La structure de données n'etais pa le seule défis. Nous avons du utilisé et concevoir divers
+                    algorithme. Les algorithmes choisis, selon les besoins du client, comprennent EC 521 pour générer
+                    les clés de signatures et ECDSA* pour signer les messages, ainsi que RSA* 4096 pour générer les clés
+                    de chiffrement et chiffrer les différents messages et Bcrypt pour le hachage des mots de passe.
+                </p>
+                <p>
+                    Notre équipe a aussi conçu un protocole de chiffrement linéairement homomorphe.
+                </p>
+                <p>
+                    Le système de chiffrement de Paillier présente des propriétés intéressantes, notamment
+                    l'homomorphisme partiel, ce qui signifie qu'il est possible de faire des opérations sur les chiffrés
+                    qui correspondent à des opérations sur les messages en clair, mais seulement pour certaines
+                    opérations spécifiques comme l'addition. Cette propriété est utilisée dans le calcul du chiffré
+                    (étape Encrypt) et dans l'algorithme de déchiffrement.
+                </p>
+                <p>
+                    Le système de Paillier est souvent utilisé dans des applications nécessitant des opérations sur des
+                    données chiffrées sans révéler les données originales, comme dans les systèmes de vote électronique
+                    et les applications de protection de la vie privée.
+                </p>
+                <p>
+                    La suite de cette partie sur les algorithme étais la sécurité Afin d'assurer la sécurité du code
+                    nous avons compris les enjeux de sécurité et pour se faire nous avons mit en place divers concept
+                    afin de garantir l'intégrité et la confidentialité des données. Ces concept sont les suivants :
+                </p>
+                <p>
+                    Pour commencer, Les communications réseau mentionnées précédemment sont réalisées à l'aide de
+                    sockets, fournissant ainsi une API robuste pour le transfert d'informations entre les
+                    3 applications. Ces communications sont sécurisées grâce à l'utilisation du protocole TLS* et d'un
+                    certificat signé par une autorité de certification, assurant un chiffrement des échanges entre les
+                    acteurs. De plus toute les données passant d'une application a l'autre sont chiffrés.
+                </p>
+                <p>
+                    La sécurité et la confidentialité ont été au cœur des préoccupations de l’équipe de développement.
+                    Le système est doté de mécanismes de sécurité avancés, notamment en intégrant des principes de
+                    chiffrements, de signatures et de certificats. Ces mesures assurent une protection efficace des
+                    données sensibles échangées au cours des enchères électroniques.
+                </p>
+                <p>
+                    Pour finir, les impacts envirronnementaux et sociétaux ont étais une source de preocupation pour
+                    nous. Tout dabord, concernant les impacts envirronnementaux nous pouvons prendre les points suivant
+                    :
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            L'utilisation de serveurs et de réseaux de communication dans le système d'enchères en ligne
+                            peut entraîner une consommation d'énergie importante, notamment lors de la transmission des
+                            données et du traitement des requêtes.
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    Enfin, concernant les impacts societaux nous pouvons prendre les points suivant :
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            Assurer que les applications d'enchères en ligne sont accessibles à tous les utilisateurs, y
+                            compris ceux ayant des besoins spécifiques, est crucial du point de vue sociétal. Les
+                            interfaces utilisateur doivent être conçues de manière à garantir une accessibilité maximale
+                            pour promouvoir l'inclusion sociale.
+                        </p>
+                        <p>
+                            Les mesures de sécurité mises en place pour protéger les données des utilisateurs, telles
+                            que les informations de connexion et les données d'enchères, doivent être conformes aux
+                            normes de protection de la vie privée.
+                        </p>
+                        <p>
+                            Il est important d'évaluer si les applications d'enchères en ligne respectent les
+                            réglementations et les lois en vigueur concernant les enchères électroniques. Cela peut
+                            inclure des aspects tels que la conformité aux règles de protection des consommateurs, la
+                            sécurité des transactions financières et la transparence des enchères. Pour cela nous avons
+                            fait des recherche sur les legislation française et européénne
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="imgSAEDetail">
+                <div class="img">
+                    <img src="../../ressource/image/projet/semestre3/SAE3B01/UE2%20AC.png" alt="main intro">
+                </div>
+            </div>
+        </div>
+        <div class="textVideSAE2">
+            <div class="texteDetail">
+                <p>
+                    Pour commencer les 3 application était communicantes grace a un systéme de socket. Notre équipe
+                </p>
+            </div>
+            <div class="imgSAEDetail">
+                <div class="img">
+                    <img src="../../ressource/image/projet/semestre3/SAE3B01/UE3%20AC.png" alt="main intro">
                 </div>
             </div>
         </div>
