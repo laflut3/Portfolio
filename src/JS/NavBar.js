@@ -1,6 +1,6 @@
 let NavBar = ' <nav id="nav-primaire">\n' +
     '        <div class="menu-item">\n' +
-    '            <a href="../Accueil.html">Accueil</a>\n' +
+    '            <a href="Accueil.html">Accueil</a>\n' +
     '            <div class="sousmenu">\n' +
     '                <ul>\n' +
     '                    <li>\n' +
