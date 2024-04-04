@@ -1,52 +1,52 @@
 let NavBar = ' <nav id="nav-primaire">\n' +
     '        <div class="menu-item">\n' +
-    '            <a href="../Accueil.html">Accueil</a>\n' +
+    '            <a href="../../Accueil.html">Accueil</a>\n' +
     '            <div class="sousmenu">\n' +
     '                <ul>\n' +
     '                    <li>\n' +
-    '                        <a href="../Accueil.html#Introduction">Introduction</a>\n' +
+    '                        <a href="../../Accueil.html#Introduction">Introduction</a>\n' +
     '                    </li>\n' +
     '                    <li>\n' +
-    '                        <a href="../Accueil.html#biographie">Biographie</a>\n' +
+    '                        <a href="../../Accueil.html#biographie">Biographie</a>\n' +
     '                    </li>\n' +
     '                </ul>\n' +
     '            </div>\n' +
     '        </div>\n' +
     '        <div class="menu-item">\n' +
-    '            <a href="../Projet.html">Mes Projets</a>\n' +
+    '            <a href="../../Projet.html">Mes Projets</a>\n' +
     '            <div class="sousmenu">\n' +
     '                <div class="but">\n' +
     '                    <ul>\n' +
     '\n' +
     '                        <li>\n' +
-    '                            <a href="../Projet.html#BUT">Universitaire</a>\n' +
+    '                            <a href="../../Projet.html#BUT">Universitaire</a>\n' +
     '                        </li>\n' +
     '\n' +
     '                        <ul class="sousmenu2">\n' +
     '                            <li>\n' +
-    '                                <a href="../semestre1.html">Semestre 1</a>\n' +
+    '                                <a href="../../semestre1.html">Semestre 1</a>\n' +
     '                            </li>\n' +
     '                            <li>\n' +
-    '                                <a href="../semestre2.html">Semestre 2</a>\n' +
+    '                                <a href="../../semestre2.html">Semestre 2</a>\n' +
     '                            </li>\n' +
     '                            <li>\n' +
-    '                                <a href="../semestre3et4.html">Semestre 3 et 4</a>\n' +
+    '                                <a href="../../semestre3et4.html">Semestre 3 et 4</a>\n' +
     '                            </li>\n' +
     '                        </ul>\n' +
     '                    </ul>\n' +
     '                </div>\n' +
     '                <ul>\n' +
     '                    <li>\n' +
-    '                        <a href="../Projet.html#personnel">Personnel</a>\n' +
+    '                        <a href="../../Projet.html#personnel">Personnel</a>\n' +
     '                    </li>\n' +
     '                </ul>\n' +
     '            </div>\n' +
     '        </div>\n' +
     '        <div class="menu-item">\n' +
-    '            <a href="../CV.html">Mon CV</a>\n' +
+    '            <a href="../../CV.html">Mon CV</a>\n' +
     '        </div>\n' +
     '        <div class="menu-item">\n' +
-    '            <a href="../Contact.html">Contact</a>\n' +
+    '            <a href="../../Contact.html">Contact</a>\n' +
     '        </div>\n' +
     '    </nav>';
 
@@ -62,10 +62,10 @@ let navBurger = '    <nav id="navBurger">\n' +
     '                        <div class="content">\n' +
     '                            <ul>\n' +
     '                                <li>\n' +
-    '                                    <a href="../Accueil.html#Introduction">Introduction</a>\n' +
+    '                                    <a href="../../Accueil.html#Introduction">Introduction</a>\n' +
     '                                </li>\n' +
     '                                <li>\n' +
-    '                                    <a href="../Accueil.html#biographie">Biographie</a>\n' +
+    '                                    <a href="../../Accueil.html#biographie">Biographie</a>\n' +
     '                                </li>\n' +
     '                            </ul>\n' +
     '                        </div>\n' +
@@ -80,10 +80,10 @@ let navBurger = '    <nav id="navBurger">\n' +
     '                            <div class="but">\n' +
     '                                <ul>\n' +
     '                                    <li>\n' +
-    '                                        <a href="../Projet.html">Introduction</a>\n' +
+    '                                        <a href="../../Projet.html">Introduction</a>\n' +
     '                                    </li>\n' +
     '                                    <li>\n' +
-    '                                        <a href="../Projet.html#BUT">Universitaire</a>\n' +
+    '                                        <a href="../../Projet.html#BUT">Universitaire</a>\n' +
     '                                    </li>\n' +
     '\n' +
     '                                    <li>\n' +
@@ -93,13 +93,13 @@ let navBurger = '    <nav id="navBurger">\n' +
     '                                                <div class="content">\n' +
     '                                                    <ul>\n' +
     '                                                        <li>\n' +
-    '                                                            <a href="../semestre1.html">Semestre 1</a>\n' +
+    '                                                            <a href="../../semestre1.html">Semestre 1</a>\n' +
     '                                                        </li>\n' +
     '                                                        <li>\n' +
-    '                                                            <a href="../semestre2.html">Semestre 2</a>\n' +
+    '                                                            <a href="../../semestre2.html">Semestre 2</a>\n' +
     '                                                        </li>\n' +
     '                                                        <li>\n' +
-    '                                                            <a href="../semestre3et4.html">Semestre 3 et 4</a>\n' +
+    '                                                            <a href="../../semestre3et4.html">Semestre 3 et 4</a>\n' +
     '                                                        </li>\n' +
     '                                                    </ul>\n' +
     '                                                </div>\n' +
@@ -111,7 +111,7 @@ let navBurger = '    <nav id="navBurger">\n' +
     '                        </div>\n' +
     '                        <ul>\n' +
     '                            <li>\n' +
-    '                                <a href="../Projet.html#personnel">Personnel</a>\n' +
+    '                                <a href="../../Projet.html#personnel">Personnel</a>\n' +
     '                            </li>\n' +
     '                        </ul>\n' +
     '                    </details>\n' +
@@ -122,7 +122,7 @@ let navBurger = '    <nav id="navBurger">\n' +
     '                    <details>\n' +
     '                        <summary>CV</summary>\n' +
     '                        <div class="content">\n' +
-    '                            <a href="../CV.html">Mon CV</a>\n' +
+    '                            <a href="../../CV.html">Mon CV</a>\n' +
     '                        </div>\n' +
     '                    </details>\n' +
     '                </div>\n' +
@@ -132,7 +132,7 @@ let navBurger = '    <nav id="navBurger">\n' +
     '                    <details>\n' +
     '                        <summary>Contact</summary>\n' +
     '                        <div class="content">\n' +
-    '                            <a href="../Contact.html">Contact</a>\n' +
+    '                            <a href="../../Contact.html">Contact</a>\n' +
     '                        </div>\n' +
     '                    </details>\n' +
     '                </div>\n' +
